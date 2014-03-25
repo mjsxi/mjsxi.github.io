@@ -256,6 +256,10 @@ a{
             font-weight: 900;
             color:$color3;
 
+            @media (max-width:750px) {
+                font-size: 3em;
+            }
+
             span {
                 @include georgia;
 
