@@ -446,16 +446,19 @@ a{
 //###### Agnostic Styles
 
 .icon_container {
-    width: 25em;
+    //width: 25em;
     max-width: 400px;
     margin: 0 auto;
+
+
 }
     
 .center-paragraph {
     @include font-choice;
 
-    width: 37.5em;
+    width: 80%;
     max-width: 600px;
+    min-width:350px;
     margin: 0 auto;
     margin-bottom: 5em;
 
@@ -483,6 +486,11 @@ a{
     padding-right: 1em;
     box-sizing: border-box;
 
+    @media (max-width:750px) {
+        float: none;
+        width: 100%;
+    }
+
 }
 
 .right_text {
@@ -490,6 +498,11 @@ a{
     width: 50%;
     padding: 3em;
     box-sizing: border-box;
+
+    @media (max-width:750px) {
+        float: none;
+        width: 100%;
+    }
 
     h2 {
         @include georgia;
@@ -516,6 +529,11 @@ a{
     padding-right: 1em;
     box-sizing: border-box;
 
+    @media (max-width:750px) {
+        float: none;
+        width: 100%;
+    }
+
 }
 
 .left_text {
@@ -523,6 +541,11 @@ a{
     width: 50%;
     padding: 3em;
     box-sizing: border-box;
+
+    @media (max-width:750px) {
+        float: none;
+        width: 100%;
+    }
 
     h2 {
         @include georgia;

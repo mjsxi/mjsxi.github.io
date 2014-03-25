@@ -184,14 +184,14 @@ a {
     color: white; }
 
 .icon_container {
-  width: 25em;
   max-width: 400px;
   margin: 0 auto; }
 
 .center-paragraph {
   font-family: 'Helvetica Neue', 'arial', sans-serif;
-  width: 37.5em;
+  width: 80%;
   max-width: 600px;
+  min-width: 350px;
   margin: 0 auto;
   margin-bottom: 5em; }
   .center-paragraph h2 {
@@ -212,12 +212,20 @@ a {
   padding-left: 1em;
   padding-right: 1em;
   box-sizing: border-box; }
+  @media (max-width: 750px) {
+    .right_image {
+      float: none;
+      width: 100%; } }
 
 .right_text {
   float: right;
   width: 50%;
   padding: 3em;
   box-sizing: border-box; }
+  @media (max-width: 750px) {
+    .right_text {
+      float: none;
+      width: 100%; } }
   .right_text h2 {
     font-family: 'georgia', sans-serif;
     font-size: 4em;
@@ -237,12 +245,20 @@ a {
   padding-left: 1em;
   padding-right: 1em;
   box-sizing: border-box; }
+  @media (max-width: 750px) {
+    .left_image {
+      float: none;
+      width: 100%; } }
 
 .left_text {
   float: left;
   width: 50%;
   padding: 3em;
   box-sizing: border-box; }
+  @media (max-width: 750px) {
+    .left_text {
+      float: none;
+      width: 100%; } }
   .left_text h2 {
     font-family: 'georgia', sans-serif;
     font-size: 4em;
