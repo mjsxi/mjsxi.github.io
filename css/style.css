@@ -1,3 +1,6 @@
+* {
+  font-size: 1em; }
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del,
 dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt,
@@ -10,8 +13,7 @@ video {
   padding: 0;
   border: 0;
   font: inherit;
-  vertical-align: baseline;
-  font-size: 1rem; }
+  vertical-align: baseline; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup,
 menu, nav, section {
@@ -148,41 +150,89 @@ a {
 
 #section-5 {
   background: #e7e950; }
+  #section-5 h2 {
+    position: absolute;
+    width: 1000px;
+    font-size: 10em;
+    top: 83%;
+    left: 40%; }
   #section-5 .sec_five .center-paragraph {
     color: white; }
 
 #section-6 {
   background: #f7cb51; }
+  #section-6 h2 {
+    position: absolute;
+    width: 1000px;
+    font-size: 10em;
+    top: 83%;
+    left: 40%; }
   #section-6 .sec_six .center-paragraph {
     color: white; }
 
 #section-7 {
   background: #f04e49; }
+  #section-7 h2 {
+    position: absolute;
+    width: 1000px;
+    font-size: 10em;
+    top: 83%;
+    left: 40%; }
   #section-7 .sec_seven .center-paragraph {
     color: white; }
 
 #section-8 {
   background: #e58db6; }
+  #section-8 h2 {
+    position: absolute;
+    width: 1000px;
+    font-size: 10em;
+    top: 83%;
+    left: 40%; }
   #section-8 .sec_eight .center-paragraph {
     color: white; }
 
 #section-9 {
   background: #9dd87b; }
+  #section-9 h2 {
+    position: absolute;
+    width: 1000px;
+    font-size: 10em;
+    top: 83%;
+    left: 40%; }
   #section-9 .sec_nine .center-paragraph {
     color: white; }
 
 #section-10 {
   background: #56c9b5; }
+  #section-10 h2 {
+    position: absolute;
+    width: 1000px;
+    font-size: 10em;
+    top: 83%;
+    left: 40%; }
   #section-10 .sec_ten .center-paragraph {
     color: white; }
 
 #section-11 {
   background: #3cb8de; }
+  #section-11 h2 {
+    position: absolute;
+    width: 1000px;
+    font-size: 10em;
+    top: 83%;
+    left: 40%; }
   #section-11 .sec_eleven .center-paragraph {
     color: white; }
 
 #section-12 {
   background: #5d84ba; }
+  #section-12 h2 {
+    position: absolute;
+    width: 1000px;
+    font-size: 10em;
+    top: 83%;
+    left: 40%; }
   #section-12 .sec_twelve .center-paragraph {
     color: white; }
 
@@ -203,9 +253,9 @@ a {
     margin: 0 0 0.5em 0;
     font-style: italic; }
   .center-paragraph p {
-    font-size: 1.25em;
-    margin-top: 0.625em;
-    margin-bottom: 0.625em; }
+    font-size: 1em;
+    margin-bottom: 0.625em;
+    line-height: 1.25em; }
 
 .right_image {
   float: right;
@@ -236,9 +286,10 @@ a {
     font-style: italic; }
   .right_text p {
     font-family: 'Helvetica Neue', 'arial', sans-serif;
-    font-size: 1.25em;
+    font-size: 1em;
     margin-top: 0.625em;
-    margin-bottom: 0.625em; }
+    margin-bottom: 0.625em;
+    line-height: 1.25em; }
 
 .left_image {
   float: left;
@@ -269,9 +320,10 @@ a {
     font-style: italic; }
   .left_text p {
     font-family: 'Helvetica Neue', 'arial', sans-serif;
-    font-size: 1.25em;
+    font-size: 1em;
     margin-top: 0.625em;
-    margin-bottom: 0.625em; }
+    margin-bottom: 0.625em;
+    line-height: 1.25em; }
 
 .bloc {
   display: block; }

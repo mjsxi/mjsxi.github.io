@@ -1,4 +1,7 @@
 //###### RESET
+* {
+    font-size: 1em;
+}
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,
 p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,
@@ -13,7 +16,6 @@ video {
     border:0;
     font:inherit;
     vertical-align:baseline;
-    font-size:1rem;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,
@@ -80,6 +82,14 @@ img, video {
 
 @mixin georgia() {
     font-family: 'georgia', sans-serif;
+}
+
+@mixin title-bottom() {
+        position: absolute;
+        width: 1000px;
+        font-size: 10em;
+        top: 83%;
+        left: 40%;
 }
 
 //###### VARIABLES
@@ -324,6 +334,10 @@ a{
 #section-5{
     background: darken( $color7 , 10% );
 
+    h2 {
+        @include title-bottom;
+    }
+
     .sec_five {
 
         .center-paragraph {
@@ -339,6 +353,10 @@ a{
 
 #section-6{
     background:$color8;
+
+    h2 {
+        @include title-bottom;
+    }
 
     .sec_six {
 
@@ -356,6 +374,10 @@ a{
 #section-7{
     background: $color9;
 
+    h2 {
+        @include title-bottom;
+    }
+
     .sec_seven {
 
         .center-paragraph {
@@ -371,6 +393,10 @@ a{
 
 #section-8{
     background:$color10;
+
+    h2 {
+        @include title-bottom;
+    }
 
     .sec_eight {
 
@@ -388,6 +414,10 @@ a{
 #section-9{
     background:$color11;
 
+    h2 {
+        @include title-bottom;
+    }
+
     .sec_nine {
 
         .center-paragraph {
@@ -403,6 +433,10 @@ a{
 
 #section-10{
     background:$color12;
+
+    h2 {
+        @include title-bottom;
+    }
 
     .sec_ten {
 
@@ -420,6 +454,10 @@ a{
 #section-11{
     background:$color13;
 
+    h2 {
+        @include title-bottom;
+    }
+
     .sec_eleven {
 
         .center-paragraph {
@@ -435,6 +473,10 @@ a{
 
 #section-12{
     background:$color14;
+
+    h2 {
+        @include title-bottom;
+    }
 
     .sec_twelve {
 
@@ -475,9 +517,10 @@ a{
     }
 
     p {
-        font-size: 1.25em;
-        margin-top: 0.625em;
+        font-size: 1em;
+        //margin-top: 0.625em;
         margin-bottom: 0.625em;
+        line-height: 1.25em;
     }
 }
 
@@ -518,9 +561,10 @@ a{
 
     p {
         @include font-choice;
-        font-size: 1.25em;
+        font-size: 1em;
         margin-top: 0.625em;
         margin-bottom: 0.625em;
+        line-height: 1.25em;
     }
 }
 
@@ -562,9 +606,10 @@ a{
     p {
         @include font-choice;
 
-        font-size: 1.25em;
+        font-size: 1em;
         margin-top: 0.625em;
         margin-bottom: 0.625em;
+        line-height: 1.25em;
     }
 }
 
