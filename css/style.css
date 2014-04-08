@@ -124,13 +124,14 @@ a {
     position: relative;
     z-index: 9999999999999999999999999999999;
     margin-top: 4em;
-    width: 95%;
-    margin-left: auto;
+    width: 20%;
+    margin-left: 60%;
     margin-right: auto;
-    text-align: center;
-    font-size: 6em;
+    text-align: left;
+    min-width: 270px;
+    font-size: 4em;
     font-weight: 900;
-    color: #e5e5e5; }
+    color: #1d1d1d; }
     @media (max-width: 750px) {
       #section-1 header h1, .cover header h1 {
         font-size: 3em; } }
@@ -140,7 +141,7 @@ a {
       font-style: italic; }
 
 #section-2 {
-  background: #5c69a9; }
+  background: #7d88bb; }
   #section-2 .sec_two .center-paragraph {
     color: white; }
 
@@ -159,7 +160,7 @@ a {
   #section-5 h2 {
     position: absolute;
     font-size: 10em;
-    top: 83%;
+    top: 82%;
     left: 65%; }
   #section-5 .sec_five .center-paragraph {
     color: white; }
@@ -169,7 +170,7 @@ a {
   #section-6 h2 {
     position: absolute;
     font-size: 10em;
-    top: 83%;
+    top: 82%;
     left: 65%; }
   #section-6 .sec_six .center-paragraph {
     color: white; }
@@ -179,7 +180,7 @@ a {
   #section-7 h2 {
     position: absolute;
     font-size: 10em;
-    top: 83%;
+    top: 82%;
     left: 65%; }
   #section-7 .sec_seven .center-paragraph {
     color: white; }
@@ -189,7 +190,7 @@ a {
   #section-8 h2 {
     position: absolute;
     font-size: 10em;
-    top: 83%;
+    top: 82%;
     left: 65%; }
   #section-8 .sec_eight .center-paragraph {
     color: white; }
@@ -199,7 +200,7 @@ a {
   #section-9 h2 {
     position: absolute;
     font-size: 10em;
-    top: 83%;
+    top: 82%;
     left: 65%; }
   #section-9 .sec_nine .center-paragraph {
     color: white; }
@@ -209,7 +210,7 @@ a {
   #section-10 h2 {
     position: absolute;
     font-size: 10em;
-    top: 83%;
+    top: 82%;
     left: 65%; }
   #section-10 .sec_ten .center-paragraph {
     color: white; }
@@ -219,7 +220,7 @@ a {
   #section-11 h2 {
     position: absolute;
     font-size: 10em;
-    top: 83%;
+    top: 82%;
     left: 65%; }
   #section-11 .sec_eleven .center-paragraph {
     color: white; }
@@ -229,7 +230,7 @@ a {
   #section-12 h2 {
     position: absolute;
     font-size: 10em;
-    top: 83%;
+    top: 82%;
     left: 65%; }
   #section-12 .sec_twelve .center-paragraph {
     color: white; }
@@ -240,14 +241,14 @@ a {
 
 .center-paragraph {
   font-family: 'Helvetica Neue', 'arial', sans-serif;
-  width: 80%;
+  width: 40%;
   max-width: 600px;
   margin: 0 auto;
   margin-bottom: 5em; }
   .center-paragraph h2 {
     font-family: 'georgia', sans-serif;
     font-size: 4em;
-    text-align: center;
+    text-align: left;
     margin: 0 0 0.5em 0;
     font-style: italic; }
   .center-paragraph p {
@@ -257,7 +258,7 @@ a {
 
 .right_image {
   float: right;
-  width: 50%;
+  width: 60%;
   padding-top: 10em;
   padding-left: 1em;
   padding-right: 1em;
@@ -269,9 +270,11 @@ a {
 
 .right_text {
   float: right;
-  width: 50%;
+  width: 40%;
   padding: 3em;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative;
+  left: -6em; }
   @media (max-width: 750px) {
     .right_text {
       float: none;
@@ -279,7 +282,7 @@ a {
   .right_text h2 {
     font-family: 'georgia', sans-serif;
     font-size: 4em;
-    text-align: center;
+    text-align: left;
     margin: 0 0 0.5em 0;
     font-style: italic; }
   .right_text p {
@@ -291,7 +294,7 @@ a {
 
 .left_image {
   float: left;
-  width: 50%;
+  width: 60%;
   padding-top: 10em;
   padding-left: 1em;
   padding-right: 1em;
@@ -303,9 +306,11 @@ a {
 
 .left_text {
   float: left;
-  width: 50%;
+  width: 40%;
   padding: 3em;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative;
+  right: -6em; }
   @media (max-width: 750px) {
     .left_text {
       float: none;
@@ -313,7 +318,7 @@ a {
   .left_text h2 {
     font-family: 'georgia', sans-serif;
     font-size: 4em;
-    text-align: center;
+    text-align: left;
     margin: 0 0 0.5em 0;
     font-style: italic; }
   .left_text p {

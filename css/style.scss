@@ -88,7 +88,7 @@ img, video {
         position: absolute;
         //width: 1000px;
         font-size: 10em;
-        top: 83%;
+        top: 82%;
         left: 65%;
 }
 
@@ -96,7 +96,7 @@ img, video {
 
 $color1: rgb(55,55,85);  //base font color
 $color2: rgb(229,229,229);  //cover background color
-$color3: rgb(229,229,229);  //cover font color
+$color3: rgb(29,29,29);  //cover font color
 $color4: rgb(92,105,169);  //section two background color
 $color5: rgb(250,250,250);  //section three background color
 $color6: rgb(250,200,200);  //section four background color
@@ -259,12 +259,13 @@ a{
             position: relative;
             z-index: 9999999999999999999999999999999;
             margin-top: 4em;
-            width: 95%;
-            margin-left: auto;
+            width: 20%;
+            margin-left: 60%;
             margin-right: auto;
-            text-align: center;
+            text-align: left;
+            min-width: 270px;
 
-            font-size:6em;
+            font-size:4em;
             font-weight: 900;
             color:$color3;
 
@@ -286,7 +287,7 @@ a{
 //###### Section 2 
 
 #section-2{
-    background:$color4;
+    background: lighten( $color4 , 10% );
 
     .sec_two {
         
@@ -504,7 +505,7 @@ a{
 .center-paragraph {
     @include font-choice;
 
-    width: 80%;
+    width: 40%;
     max-width: 600px;
     margin: 0 auto;
     margin-bottom: 5em;
@@ -513,7 +514,7 @@ a{
         @include georgia;
 
         font-size: 4em;
-        text-align: center;
+        text-align: left;
         margin: 0 0 0.5em 0;
         font-style: italic;
     }
@@ -528,7 +529,7 @@ a{
 
 .right_image {
     float: right;
-    width: 50%;
+    width: 60%;
     padding-top: 10em;
     padding-left: 1em;
     padding-right: 1em;
@@ -543,9 +544,11 @@ a{
 
 .right_text {
     float: right;
-    width: 50%;
+    width: 40%;
     padding: 3em;
     box-sizing: border-box;
+    position: relative;
+    left: -6em;
 
     @media (max-width:750px) {
         float: none;
@@ -556,7 +559,7 @@ a{
         @include georgia;
 
         font-size: 4em;
-        text-align: center;
+        text-align: left;
         margin: 0 0 0.5em 0;
         font-style: italic;
     }
@@ -572,7 +575,7 @@ a{
 
 .left_image {
     float: left;
-    width: 50%;
+    width: 60%;
     padding-top: 10em;
     padding-left: 1em;
     padding-right: 1em;
@@ -587,9 +590,11 @@ a{
 
 .left_text {
     float: left;
-    width: 50%;
+    width: 40%;
     padding: 3em;
     box-sizing: border-box;
+    position: relative;
+    right: -6em;
 
     @media (max-width:750px) {
         float: none;
@@ -600,7 +605,7 @@ a{
         @include georgia;
 
         font-size: 4em;
-        text-align: center;
+        text-align: left;
         margin: 0 0 0.5em 0;
         font-style: italic;
     }
