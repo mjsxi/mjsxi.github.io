@@ -235,6 +235,16 @@ a {
   #section-12 .sec_twelve .center-paragraph {
     color: white; }
 
+#section-13 {
+  background: #7c639f; }
+  #section-13 h2 {
+    position: absolute;
+    font-size: 10em;
+    top: 82%;
+    left: 65%; }
+  #section-13 .sec_thirteen .center-paragraph {
+    color: white; }
+
 .icon_container {
   max-width: 400px;
   margin: 0 auto; }

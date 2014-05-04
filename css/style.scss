@@ -31,7 +31,7 @@ ol,ul {
     list-style:none;
 }
 
-blockquote,q { 
+blockquote,q {
     quotes:none;
 }
 
@@ -108,20 +108,21 @@ $color11: rgb(157,216,123);  //section nine background color
 $color12: rgb(86,201,181);  //section ten background color
 $color13: rgb(60,184,222);  //section eleven background color
 $color14: rgb(93,132,186);  //section twelve background color
+$color15: rgb(124,99,159);  //section twelve background color
 
 $color-link: #1074ce;
 $color-link-hover: #0a487f;
 
 //###### Clearfix
 
-.cf { 
+.cf {
     zoom:1;
 
     &:before,
-    &:after { 
+    &:after {
         content:"";
-        display:table; 
-        clear:both; 
+        display:table;
+        clear:both;
     }
 }
 
@@ -175,7 +176,7 @@ h4,h5,h6{
 }
 
 p{
-    
+
 }
 
 strong{
@@ -190,7 +191,7 @@ a{
         color:$color-link-hover;
     }
 }
-    
+
 .align-center{
     text-align: center;
 }
@@ -201,7 +202,7 @@ a{
 //###### Nav
 
 
-//###### Sliding Panels Box Shadow 
+//###### Sliding Panels Box Shadow
 /*
 .curtains>li {
     box-shadow:0 0 12px #666;
@@ -211,7 +212,7 @@ a{
     }
 }
 */
-//###### MENU 
+//###### MENU
 
 /*
 #menu{
@@ -233,7 +234,7 @@ a{
 }
 */
 
-//###### Section 1 
+//###### Section 1
 
 #section-1,.cover{
     //background:url('') 50% 0 no-repeat;
@@ -284,13 +285,13 @@ a{
 }
 
 
-//###### Section 2 
+//###### Section 2
 
 #section-2{
     background: lighten( $color4 , 10% );
 
     .sec_two {
-        
+
         .center-paragraph {
             color: white;
 
@@ -306,16 +307,16 @@ a{
     background:$color5;
 
     .sec_three {
-        
+
         .center-paragraph {
             color: inherit;
 
         }
-    
+
     }
 
 }
-    
+
 //###### Section 4
 
 #section-4{
@@ -327,7 +328,7 @@ a{
             color: inherit;
 
         }
-    
+
     }
 
 }
@@ -347,7 +348,7 @@ a{
             color: white;
 
         }
-    
+
     }
 
 }
@@ -367,12 +368,12 @@ a{
             color: white;
 
         }
-    
+
     }
 
 }
 
-//###### Section 7 
+//###### Section 7
 
 #section-7{
     background: $color9;
@@ -387,7 +388,7 @@ a{
             color: white;
 
         }
-    
+
     }
 
 }
@@ -407,7 +408,7 @@ a{
             color: white;
 
         }
-    
+
     }
 
 }
@@ -427,7 +428,7 @@ a{
             color: white;
 
         }
-    
+
     }
 
 }
@@ -447,7 +448,7 @@ a{
             color: white;
 
         }
-    
+
     }
 
 }
@@ -467,7 +468,7 @@ a{
             color: white;
 
         }
-    
+
     }
 
 }
@@ -487,7 +488,27 @@ a{
             color: white;
 
         }
-    
+
+    }
+
+}
+
+//###### Section 13
+
+#section-13{
+    background:$color15;
+
+    h2 {
+        @include title-bottom;
+    }
+
+    .sec_thirteen {
+
+        .center-paragraph {
+            color: white;
+
+        }
+
     }
 
 }
@@ -501,7 +522,7 @@ a{
 
 
 }
-    
+
 .center-paragraph {
     @include font-choice;
 
