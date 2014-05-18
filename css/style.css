@@ -348,6 +348,8 @@ body {
         @media (max-width: 600px) {
           body #container .item.ghost {
             width: 45%; } }
+      body #container .item.last {
+        min-height: 25px; }
 
 @-webkit-keyframes gradientTrans {
   0% {

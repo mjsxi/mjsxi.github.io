@@ -469,6 +469,9 @@ body {
           width:45%;
         }
       }
+      &.last {
+        min-height: 25px;
+      }
     }
   }
 }
