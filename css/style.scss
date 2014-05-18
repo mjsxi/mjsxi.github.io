@@ -179,6 +179,7 @@ body {
         -webkit-transform: translate3d(0, 0, 0);
         @media (max-width: 600px) {
           width:45%;
+          min-height: 120px;
         }
         h2 {
           @include font-choice;
