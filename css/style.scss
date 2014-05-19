@@ -87,7 +87,7 @@ img, video {
 //###### IMPORTS
 
 @import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,400);
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 
 //###### MIXINS
@@ -98,6 +98,10 @@ img, video {
 
 @mixin font-serif() {
   font-family: 'Vollkorn', serif;
+}
+
+@mixin font-open() {
+  font-family: 'Open Sans', sans-serif;
 }
 
 //###### VARIABLES
@@ -174,7 +178,11 @@ body {
       &.gradient {
         background: linear-gradient(45deg, #004CD0 0%,#009133 100%);
         -webkit-animation: gradientTrans 15s infinite;
+        -moz-animation: gradientTrans 15s infinite;
+        animation: gradientTrans 15s infinite;
         -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
         @media (max-width: 600px) {
           width:45%;
           min-height: 120px;
@@ -472,6 +480,59 @@ body {
       &.last {
         min-height: 25px;
       }
+      &.small {
+        min-height: 25px;
+      }
+    }
+  }
+  #content_container {
+    width:80%;
+    max-width:860px;
+    margin: 5% auto;
+    list-style-type: none;
+    @media (max-width: 980px) {
+      width:90%;
+    }
+    .content {
+      @include font-serif;
+      font-style: italic;
+      .lede_img {
+
+      }
+      h2 {
+        font-size: 3em;
+        width: 75%;
+        margin: 0 auto;
+        margin-top: .5em;
+        margin-bottom: .5em;
+        @media (max-width: 600px) {
+          width:100%;
+        }
+      }
+      p {
+        @include font-open;
+
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 1.5%;
+        font-style: normal;
+        @media (max-width: 600px) {
+          width:100%;
+        }
+      }
+      .video_container {
+      	position: relative;
+      	padding-bottom: 53.4%; /* 16:9 */
+      	padding-top: 25px;
+      	height: 0;
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
   }
 }
@@ -480,8 +541,17 @@ body {
 
 @-webkit-keyframes gradientTrans {
   0%  {-webkit-filter: hue-rotate(0deg)}
-
   100%  {-webkit-filter: hue-rotate(360deg)}
+}
+
+@-moz-keyframes gradientTrans {
+  0%  {-moz-filter: hue-rotate(0deg)}
+  100%  {-moz-filter: hue-rotate(360deg)}
+}
+
+@keyframes gradientTrans {
+  0%  {filter: hue-rotate(0deg)}
+  100%  {filter: hue-rotate(360deg)}
 }
 
 //###### AGNOSTIC STYLES

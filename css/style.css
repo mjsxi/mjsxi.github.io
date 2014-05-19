@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,400);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del,
 dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt,
@@ -106,7 +107,11 @@ body {
       body #container .item.gradient {
         background: linear-gradient(45deg, #004cd0 0%, #009133 100%);
         -webkit-animation: gradientTrans 15s infinite;
-        -webkit-transform: translate3d(0, 0, 0); }
+        -moz-animation: gradientTrans 15s infinite;
+        animation: gradientTrans 15s infinite;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0); }
         @media (max-width: 600px) {
           body #container .item.gradient {
             width: 45%;
@@ -350,6 +355,49 @@ body {
             width: 45%; } }
       body #container .item.last {
         min-height: 25px; }
+      body #container .item.small {
+        min-height: 25px; }
+  body #content_container {
+    width: 80%;
+    max-width: 860px;
+    margin: 5% auto;
+    list-style-type: none; }
+    @media (max-width: 980px) {
+      body #content_container {
+        width: 90%; } }
+    body #content_container .content {
+      font-family: 'Vollkorn', serif;
+      font-style: italic; }
+      body #content_container .content h2 {
+        font-size: 3em;
+        width: 75%;
+        margin: 0 auto;
+        margin-top: .5em;
+        margin-bottom: .5em; }
+        @media (max-width: 600px) {
+          body #content_container .content h2 {
+            width: 100%; } }
+      body #content_container .content p {
+        font-family: 'Open Sans', sans-serif;
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 1.5%;
+        font-style: normal; }
+        @media (max-width: 600px) {
+          body #content_container .content p {
+            width: 100%; } }
+      body #content_container .content .video_container {
+        position: relative;
+        padding-bottom: 53.4%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0; }
+        body #content_container .content .video_container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
 
 @-webkit-keyframes gradientTrans {
   0% {
@@ -357,3 +405,15 @@ body {
 
   100% {
     -webkit-filter: hue-rotate(360deg); } }
+@-moz-keyframes gradientTrans {
+  0% {
+    -moz-filter: hue-rotate(0deg); }
+
+  100% {
+    -moz-filter: hue-rotate(360deg); } }
+@keyframes gradientTrans {
+  0% {
+    filter: hue-rotate(0deg); }
+
+  100% {
+    filter: hue-rotate(360deg); } }
