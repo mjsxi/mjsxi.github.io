@@ -356,10 +356,11 @@ body {
       body #container .item.last {
         min-height: 25px; }
       body #container .item.small {
-        min-height: 12.5px; }
+        min-height: 25px; }
         @media (max-width: 600px) {
           body #container .item.small {
-            width: 45%; } }
+            width: 45%;
+            min-height: 12.5px; } }
   body #content_container {
     width: 80%;
     max-width: 860px;

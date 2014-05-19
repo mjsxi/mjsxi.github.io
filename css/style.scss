@@ -481,9 +481,10 @@ body {
         min-height: 25px;
       }
       &.small {
-        min-height: 12.5px;
+        min-height: 25px;
         @media (max-width: 600px) {
           width:45%;
+          min-height: 12.5px;
         }
       }
     }
