@@ -512,6 +512,9 @@ body {
         @media (max-width: 600px) {
           width:100%;
         }
+        span {
+          font-size: .65em;
+        }
       }
       p {
         @include font-open;
@@ -522,13 +525,31 @@ body {
         font-style: normal;
         @media (max-width: 600px) {
           width:100%;
+          margin-bottom: 5%;
         }
       }
       .video_container {
+        margin-top:5%;
       	position: relative;
       	padding-bottom: 53.4%; /* 16:9 */
       	padding-top: 25px;
       	height: 0;
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .issuu_container {
+        margin: 0 auto;
+        margin-top:5%;
+        position: relative;
+        padding-bottom: 53.4%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+        max-width:740px;
         iframe {
           position: absolute;
           top: 0;
