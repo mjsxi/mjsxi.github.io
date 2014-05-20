@@ -13,7 +13,7 @@
   <div id="content_container">
     <div class="content">
       <div class="home">
-        <a href="index.html">
+        <a href="#nav">
           <img src="img/home.svg"/>
         </a>
       </div>
@@ -33,7 +33,7 @@
       </div>
     </div>
   </div>
-  <li id="container">
+  <li id="container" name="nav">
     <ol class="item small">
     </ol>
     <ol class="item small">
@@ -143,10 +143,25 @@
 <script src="js/packery.pkgd.min.js"></script>
 <script>
 
-  var container = document.querySelector('#container');
-  var msnry = new Masonry( container, {
+var container = document.querySelector('#container');
+var msnry = new Masonry( container, {
     // options
     itemSelector: '.item'
+});
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
 
 </script>
