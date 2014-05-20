@@ -9,7 +9,7 @@
     <meta name="description" content="A website build to showcase Matt Sullivan's work">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="fade">
   <li id="container">
     <ol class="item gradient">
       <h2>Hi<h2>
@@ -140,6 +140,8 @@ $(function() {
     }
   });
 });
+
+$("#fade").delay(1000).animate({"opacity": "1"}, 700);
 
 </script>
 </body>

@@ -9,7 +9,7 @@
     <meta name="description" content="A website build to showcase Matt Sullivan's work">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="fade">
   <div id="content_container">
     <div class="content">
       <div class="home">
@@ -163,6 +163,8 @@ $(function() {
     }
   });
 });
+
+$("#fade").delay(1000).animate({"opacity": "1"}, 700);
 
 </script>
 </body>

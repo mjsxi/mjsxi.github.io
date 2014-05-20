@@ -120,6 +120,9 @@ body {
   height: 100%;
   width: 100%;
   background: rgb(240,240,240);
+  &#fade {
+    opacity:0;
+  }
   #container {
     width:80%;
     max-width:860px;
