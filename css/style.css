@@ -372,6 +372,13 @@ body {
     body #content_container .content {
       font-family: 'Vollkorn', serif;
       font-style: italic; }
+      body #content_container .content .home {
+        width: 5%;
+        min-width: 36px;
+        margin-bottom: 2.5%;
+        transition: all 0.5s; }
+        body #content_container .content .home:hover {
+          opacity: 0.5; }
       body #content_container .content h2 {
         font-size: 3em;
         width: 75%;

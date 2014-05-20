@@ -500,6 +500,15 @@ body {
     .content {
       @include font-serif;
       font-style: italic;
+      .home {
+        width: 5%;
+        min-width: 36px;
+        margin-bottom: 2.5%;
+        transition: all 0.5s;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
       .lede_img {
 
       }
