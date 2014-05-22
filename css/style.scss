@@ -432,8 +432,8 @@ body {
           width:95%;
         }
       }
-      &.gow {
-        background: url("../img/gow.jpg");
+      &.info {
+        background: url("../img/info.jpg");
         background-position: 55% 50%;
         background-size: cover;
         transition: all 0.5s;
@@ -521,6 +521,7 @@ body {
         margin: 0 auto;
         margin-top: .5em;
         margin-bottom: .5em;
+        text-transform: capitalize;
         @media (max-width: 600px) {
           width:100%;
         }

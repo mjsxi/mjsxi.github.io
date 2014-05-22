@@ -315,15 +315,15 @@ body {
         @media (max-width: 600px) {
           body #container .item.years {
             width: 95%; } }
-      body #container .item.gow {
-        background: url("../img/gow.jpg");
+      body #container .item.info {
+        background: url("../img/info.jpg");
         background-position: 55% 50%;
         background-size: cover;
         transition: all 0.5s; }
-        body #container .item.gow:hover {
+        body #container .item.info:hover {
           opacity: 0.5; }
         @media (max-width: 600px) {
-          body #container .item.gow {
+          body #container .item.info {
             width: 45%; } }
       body #container .item.apogee {
         background: url("../img/apogee.jpg");
@@ -386,7 +386,8 @@ body {
         width: 75%;
         margin: 0 auto;
         margin-top: .5em;
-        margin-bottom: .5em; }
+        margin-bottom: .5em;
+        text-transform: capitalize; }
         @media (max-width: 600px) {
           body #content_container .content h2 {
             width: 100%; } }

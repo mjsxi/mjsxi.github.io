@@ -19,95 +19,95 @@
       <p>I'm a learning junkie, always poking around to gain a new skill; I am never happy just resting on what I know. I love to further myself both technically and educationally.</p>
       <p>I currently work for Vox Media. They are a new media company they let me satisfy my creative itch by letting me participate in a veriety of design projects. Current <a href="http://www.vox.com/">Voxaholic</a> former <a href="http://www.polygon.com/">Polynaut</a> and <a href="http://www.theverge.com/">Verger</a>.</p>
     </ol>
-    <a href="tfot.html">
+    <a href="content/tfot.html">
       <ol class="item w100 future">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/fighting.html">
       <ol class="item w75 fighting">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/miniot.html">
       <ol class="item miniot">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/nogirls.html">
       <ol class="item nga">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/theknow.html">
       <ol class="item theknow">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/infinity.html">
       <ol class="item w50 infinity">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/predictive.html">
       <ol class="item predictive">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/ballons.html">
       <ol class="item ballons">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/watchdogs.html">
       <ol class="item watchdogs">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/smile.html">
       <ol class="item smile">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/bid.html">
       <ol class="item w50 bid">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/science.html">
       <ol class="item science">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/philly.html">
       <ol class="item philly">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/yearwalk.html">
       <ol class="item w100 yearwalk">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/anti.html">
       <ol class="item anti">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/adult.html">
       <ol class="item w50 adults">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/dfd.html">
       <ol class="item dfd">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/blind.html">
       <ol class="item blind">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/years.html">
       <ol class="item w75 years">
       </ol>
     </a>
-    <a href="#">
-      <ol class="item gow">
+    <a href="content/info.html">
+      <ol class="item info">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/apogee.html">
       <ol class="item apogee">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/mdma.html">
       <ol class="item mdma">
       </ol>
     </a>
-    <a href="#">
+    <a href="content/ghost.html">
       <ol class="item ghost">
       </ol>
     </a>
@@ -118,34 +118,9 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="js/packery.pkgd.min.js"></script>
+<script src="js/matt_sullivan.js"></script>
 <script>
 
-$( document ).ready(function() {
-
-  var container = document.querySelector('#container');
-  var msnry = new Masonry( container, {
-      // options
-      itemSelector: '.item'
-  });
-
-  $(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-          return false;
-        }
-      }
-    });
-  });
-
-  $("#fade").delay(1000).animate({"opacity": "1"}, 700);
-
-});
 
 </script>
 </body>
