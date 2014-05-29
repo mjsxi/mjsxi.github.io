@@ -365,7 +365,7 @@ body {
             min-height: 12.5px; } }
   body #content_container {
     width: 80%;
-    max-width: 860px;
+    max-width: 1200px;
     margin: 5% auto;
     list-style-type: none; }
     @media (max-width: 980px) {
