@@ -21,6 +21,7 @@ $( document ).ready(function() {
     });
   });
 
+  $("#fadeIn").animate({"opacity": "1"}, 1000);
   $("#fade").delay(1000).animate({"opacity": "1"}, 700);
 
 });
