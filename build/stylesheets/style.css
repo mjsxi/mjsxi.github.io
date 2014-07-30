@@ -1,0 +1,1408 @@
+/* line 3, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/style.scss */
+html, body, ol, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* line 9, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "Alright Sans";
+  src: url(http://cdn2.vox-cdn.com/fonts/vox/alright_sans_regular.v7e9802a.eot);
+  src: url(http://cdn3.vox-cdn.com/fonts/vox/alright_sans_regular.vc8e4958.woff) format("woff"), url(http://cdn1.vox-cdn.com/fonts/vox/alright_sans_regular.v1f0eb72.ttf) format("truetype"), url(http://cdn0.vox-cdn.com/fonts/vox/alright_sans_regular.v2712165.svg) format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Alright Sans";
+  src: url(http://cdn0.vox-cdn.com/fonts/vox/alright_sans_regular_italic.v6b0644e.eot);
+  src: url(http://cdn3.vox-cdn.com/fonts/vox/alright_sans_regular_italic.v9b0e60c.woff) format("woff"), url(http://cdn3.vox-cdn.com/fonts/vox/alright_sans_regular_italic.v22e04f9.ttf) format("truetype"), url(http://cdn1.vox-cdn.com/fonts/vox/alright_sans_regular_italic.v19d8027.svg) format("svg");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Alright Sans";
+  src: url(http://cdn1.vox-cdn.com/fonts/vox/alright_sans_bold.v85ab090.eot);
+  src: url(http://cdn2.vox-cdn.com/fonts/vox/alright_sans_bold.vf30c9d4.woff) format("woff"), url(http://cdn3.vox-cdn.com/fonts/vox/alright_sans_bold.v73a81d9.ttf) format("truetype"), url(http://cdn1.vox-cdn.com/fonts/vox/alright_sans_bold.vf872316.svg) format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Balto";
+  src: url(http://cdn3.vox-cdn.com/fonts/vox/baltoweb-medium.v32923ad.eot);
+  src: url(http://cdn2.vox-cdn.com/fonts/vox/baltoweb-medium.v10502d2.woff) format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Balto";
+  src: url(http://cdn3.vox-cdn.com/fonts/vox/baltoweb-bold.v8e1522a.eot);
+  src: url(http://cdn2.vox-cdn.com/fonts/vox/baltoweb-bold.v02933a5.woff) format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Harriet";
+  src: url(http://cdn3.vox-cdn.com/fonts/vox/harriet_text_regular.v8f31def.eot);
+  src: url(http://cdn1.vox-cdn.com/fonts/vox/harriet_text_regular.vc7c25d4.woff) format("woff"), url(http://cdn1.vox-cdn.com/fonts/vox/harriet_text_regular.v23ebdc3.ttf) format("truetype"), url(http://cdn1.vox-cdn.com/fonts/vox/harriet_text_regular.vff6a9d2.svg) format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Harriet";
+  src: url(http://cdn1.vox-cdn.com/fonts/vox/harriet_text_regular_italic.v3872ffe.eot);
+  src: url(http://cdn2.vox-cdn.com/fonts/vox/harriet_text_regular_italic.v72a7be1.woff) format("woff"), url(http://cdn3.vox-cdn.com/fonts/vox/harriet_text_regular_italic.ve6e7c98.ttf) format("truetype"), url(http://cdn0.vox-cdn.com/fonts/vox/harriet_text_regular_italic.ve5bda67.svg) format("svg");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Harriet Display";
+  src: url(http://cdn2.vox-cdn.com/fonts/vox/harriet_display_bold_italic.va4b977e.eot);
+  src: url(http://cdn2.vox-cdn.com/fonts/vox/harriet_display_bold_italic.v8dd839f.woff) format("woff"), url(http://cdn2.vox-cdn.com/fonts/vox/harriet_display_bold_italic.v7248788.ttf) format("truetype"), url(http://cdn1.vox-cdn.com/fonts/vox/harriet_display_bold_italic.vff433ab.svg) format("svg");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: "voxicon";
+  src: url(http://cdn0.vox-cdn.com/fonts/vox/voxicon.v283a236.eot);
+  src: url(http://cdn1.vox-cdn.com/fonts/vox/voxicon.vf47633f.woff) format("woff"), url(http://cdn1.vox-cdn.com/fonts/vox/voxicon.v7f854b5.ttf) format("truetype"); }
+
+/* line 8, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+.m-entries {
+  margin: 0 -13px;
+  overflow: hidden;
+  *zoom: 1; }
+  @media (max-width: 500px) {
+    /* line 8, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+    .m-entries {
+      margin: 0; } }
+
+/* line 16, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+.m-entry {
+  float: left;
+  width: 100%;
+  margin: 26px 0 13px;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  height: 626px; }
+  @media (min-width: 678px) {
+    /* line 16, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+    .m-entry {
+      width: 50%; }
+      /* line 36, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+      .m-entry.c2 {
+        width: 100%; }
+      /* line 39, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+      .m-entry.c3 {
+        width: 150%; } }
+  @media (min-width: 1017px) {
+    /* line 16, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+    .m-entry {
+      width: 33.33333%; }
+      /* line 36, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+      .m-entry.c2 {
+        width: 66.66667%; }
+      /* line 39, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+      .m-entry.c3 {
+        width: 100.0%; } }
+  @media (min-width: 1356px) {
+    /* line 16, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+    .m-entry {
+      width: 25%; }
+      /* line 36, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+      .m-entry.c2 {
+        width: 50%; }
+      /* line 39, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+      .m-entry.c3 {
+        width: 75%; } }
+  /* line 44, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+  .m-entry.c4 {
+    width: 100%; }
+  /* line 47, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+  .m-entry a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    bottom: 13px;
+    left: 13px;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    /* line 58, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+    .m-entry a:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.4);
+      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.6)), color-stop(100%, #000000));
+      background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), #000000);
+      background: -moz-linear-gradient(rgba(0, 0, 0, 0.6), #000000);
+      background: -o-linear-gradient(rgba(0, 0, 0, 0.6), #000000);
+      background: linear-gradient(rgba(0, 0, 0, 0.6), #000000);
+      opacity: .6;
+      -webkit-transition: opacity 0.2s;
+      -moz-transition: opacity 0.2s;
+      -o-transition: opacity 0.2s;
+      transition: opacity 0.2s; }
+    /* line 71, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+    .m-entry a:hover:before {
+      opacity: .7; }
+  /* line 75, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+  .m-entry.c-warm a:before {
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(163, 97, 26, 0.6)), color-stop(100%, #8d5416));
+    background: -webkit-linear-gradient(rgba(163, 97, 26, 0.6), #8d5416);
+    background: -moz-linear-gradient(rgba(163, 97, 26, 0.6), #8d5416);
+    background: -o-linear-gradient(rgba(163, 97, 26, 0.6), #8d5416);
+    background: linear-gradient(rgba(163, 97, 26, 0.6), #8d5416); }
+  /* line 78, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+  .m-entry.c-cool a:before {
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(109, 152, 168, 0.6)), color-stop(100%, #41626e));
+    background: -webkit-linear-gradient(rgba(109, 152, 168, 0.6), #41626e);
+    background: -moz-linear-gradient(rgba(109, 152, 168, 0.6), #41626e);
+    background: -o-linear-gradient(rgba(109, 152, 168, 0.6), #41626e);
+    background: linear-gradient(rgba(109, 152, 168, 0.6), #41626e); }
+  @media (max-width: 500px) {
+    /* line 16, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+    .m-entry {
+      margin: 0; }
+      /* line 83, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+      .m-entry a {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; }
+        /* line 88, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+        .m-entries .m-entry a:after {
+          -webkit-transform: translateY(0);
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -o-transform: translateY(0);
+          transform: translateY(0); } }
+
+/* line 95, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+body {
+  max-width: 1408px;
+  padding: 26px;
+  margin: 0 auto;
+  background-color: #EDEDED;
+  color: #4c4e4d;
+  font-family: 'Alright Sans', sans-serif; }
+  @media (max-width: 678px) {
+    /* line 95, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+    body {
+      padding: 26px 4%; } }
+
+@media (max-width: 500px) {
+  /* line 107, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
+  html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%; } }
+
+/* line 17, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_tags.scss */
+.m-hp-ad a:after {
+  -webkit-transform: translatey(-100%);
+  -moz-transform: translatey(-100%);
+  -ms-transform: translatey(-100%);
+  -o-transform: translatey(-100%);
+  transform: translatey(-100%);
+  font-family: alright sans;
+  font-size: 11px;
+  height: 17px;
+  padding: 3px 10px 0px 5px;
+  top: 0;
+  left: 2.75em;
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+  content: "advertisment";
+  background-color: #858585;
+  color: #ffffff; }
+/* line 7, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-ad.scss */
+.m-hp-ad a {
+  background: none; }
+  /* line 9, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-ad.scss */
+  .m-hp-ad a:before {
+    display: none; }
+
+/* line 25, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_tags.scss */
+.m-hp-article a:after {
+  -webkit-transform: translatey(-100%);
+  -moz-transform: translatey(-100%);
+  -ms-transform: translatey(-100%);
+  -o-transform: translatey(-100%);
+  transform: translatey(-100%);
+  font-family: alright sans;
+  font-size: 11px;
+  height: 17px;
+  padding: 3px 10px 0px 5px;
+  top: 0;
+  left: 2.75em;
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+  content: "story";
+  background-color: #ffeb00; }
+/* line 7, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-article.scss */
+.m-hp-article .m-hp-article__block {
+  position: absolute;
+  bottom: 2em;
+  left: 2em; }
+  /* line 11, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-article.scss */
+  .m-hp-article .m-hp-article__block h2 {
+    font-family: balto, sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    color: white;
+    margin-bottom: .25em; }
+  /* line 38, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_mixin.scss */
+  .m-hp-article .m-hp-article__block .byline {
+    color: white;
+    font-family: harriet;
+    font-style: italic;
+    font-size: .8em; }
+    /* line 43, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_mixin.scss */
+    .m-hp-article .m-hp-article__block .byline .author {
+      color: #6d98a8; }
+/* line 21, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-article.scss */
+.m-hp-article.c2 .m-hp-article__block {
+  width: 50%; }
+
+/* line 25, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_tags.scss */
+.m-hp-beat a:after {
+  -webkit-transform: translatey(-100%);
+  -moz-transform: translatey(-100%);
+  -ms-transform: translatey(-100%);
+  -o-transform: translatey(-100%);
+  transform: translatey(-100%);
+  font-family: alright sans;
+  font-size: 11px;
+  height: 17px;
+  padding: 3px 10px 0px 5px;
+  top: 0;
+  left: 2.75em;
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+  content: "beat";
+  background-color: #ffeb00; }
+/* line 7, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+.m-hp-beat .m-hp-beat__block {
+  position: relative; }
+  /* line 9, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+  .m-hp-beat .m-hp-beat__block .block__main {
+    padding: 1em 2em; }
+    /* line 11, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+    .m-hp-beat .m-hp-beat__block .block__main span {
+      text-align: left; }
+/* line 19, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+.m-hp-beat.c1 .m-hp-beat__block h2 {
+  font-family: balto, sans-serif;
+  font-weight: 900;
+  font-size: 2.5em;
+  color: white;
+  margin-bottom: .25em;
+  text-align: left;
+  line-height: 1em; }
+/* line 38, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_mixin.scss */
+.m-hp-beat.c1 .m-hp-beat__block .byline {
+  color: white;
+  font-family: harriet;
+  font-style: italic;
+  font-size: .8em; }
+  /* line 43, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_mixin.scss */
+  .m-hp-beat.c1 .m-hp-beat__block .byline .author {
+    color: #6d98a8; }
+/* line 28, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+.m-hp-beat.c1 .m-hp-beat__block .byline {
+  text-align: left;
+  display: block; }
+/* line 37, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+.m-hp-beat.c1 .m-hp-beat__block .block__side {
+  font-family: alright sans, sans-serif;
+  color: white;
+  font-size: .9em;
+  padding: 2em; }
+  /* line 44, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+  .m-hp-beat.c1 .m-hp-beat__block .block__side span {
+    display: none; }
+  /* line 47, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+  .m-hp-beat.c1 .m-hp-beat__block .block__side li {
+    margin-bottom: 1.5em; }
+/* line 52, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+.m-hp-beat.c1 .m-hp-beat__footer {
+  width: 100%;
+  padding: 2em 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 0px; }
+  /* line 58, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+  .m-hp-beat.c1 .m-hp-beat__footer span {
+    font-family: balto, sans-serif;
+    font-weight: 900;
+    color: #6d98a8;
+    font-size: 1.25em;
+    position: absolute;
+    left: 1.5em;
+    bottom: 1em; }
+/* line 70, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+.m-hp-beat.c2 .m-hp-beat__block h2 {
+  font-family: harriet display, serif;
+  font-style: italic;
+  font-size: 2.75em;
+  color: white;
+  margin-bottom: .25em;
+  text-align: right;
+  line-height: 1em; }
+/* line 38, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_mixin.scss */
+.m-hp-beat.c2 .m-hp-beat__block .byline {
+  color: white;
+  font-family: harriet;
+  font-style: italic;
+  font-size: .8em; }
+  /* line 43, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_mixin.scss */
+  .m-hp-beat.c2 .m-hp-beat__block .byline .author {
+    color: #6d98a8; }
+/* line 79, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+.m-hp-beat.c2 .m-hp-beat__block .byline {
+  text-align: right;
+  display: block; }
+/* line 83, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+.m-hp-beat.c2 .m-hp-beat__block .block__main {
+  width: 55%;
+  padding-top: 10em;
+  float: left; }
+/* line 88, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+.m-hp-beat.c2 .m-hp-beat__block .block__side {
+  font-family: alright sans, sans-serif;
+  color: white;
+  font-size: 1em;
+  width: 35%;
+  float: left;
+  font-size: .9em;
+  padding-top: 25%; }
+  /* line 96, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+  .m-hp-beat.c2 .m-hp-beat__block .block__side span {
+    display: none; }
+  /* line 99, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+  .m-hp-beat.c2 .m-hp-beat__block .block__side li {
+    margin-bottom: 1.5em; }
+/* line 104, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+.m-hp-beat.c2 .m-hp-beat__footer {
+  width: 100%;
+  padding: 2em 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 0px; }
+  /* line 110, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+  .m-hp-beat.c2 .m-hp-beat__footer span {
+    font-family: balto, sans-serif;
+    font-weight: 900;
+    color: #6d98a8;
+    font-size: 1.25em;
+    position: absolute;
+    left: 55%;
+    bottom: 1em; }
+
+/* line 25, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_tags.scss */
+.m-hp-feature a:after {
+  -webkit-transform: translatey(-100%);
+  -moz-transform: translatey(-100%);
+  -ms-transform: translatey(-100%);
+  -o-transform: translatey(-100%);
+  transform: translatey(-100%);
+  font-family: alright sans;
+  font-size: 11px;
+  height: 17px;
+  padding: 3px 10px 0px 5px;
+  top: 0;
+  left: 2.75em;
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+  content: "feature";
+  background-color: #ffeb00; }
+/* line 7, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-feature.scss */
+.m-hp-feature .m-hp-feature__block {
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+  width: 85%; }
+  /* line 12, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-feature.scss */
+  .m-hp-feature .m-hp-feature__block h2 {
+    font-family: harriet display, serif;
+    font-style: italic;
+    font-size: 3em;
+    line-height: 1;
+    color: white;
+    margin-bottom: .25em;
+    line-height: 1em; }
+  /* line 38, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_mixin.scss */
+  .m-hp-feature .m-hp-feature__block .byline {
+    color: white;
+    font-family: harriet;
+    font-style: italic;
+    font-size: .8em; }
+    /* line 43, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_mixin.scss */
+    .m-hp-feature .m-hp-feature__block .byline .author {
+      color: #6d98a8; }
+/* line 24, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-feature.scss */
+.m-hp-feature.c2 .m-hp-feature__block {
+  width: 55%; }
+/* line 29, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-feature.scss */
+.m-hp-feature.c3 .m-hp-feature__block {
+  width: 55%; }
+/* line 34, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-feature.scss */
+.m-hp-feature.c4 .m-hp-feature__block {
+  width: 55%; }
+  /* line 36, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-feature.scss */
+  .m-hp-feature.c4 .m-hp-feature__block h2 {
+    font-family: harriet display, serif;
+    font-style: italic;
+    font-size: 5em; }
+
+/* line 6, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+.m-hp-latest h2 {
+  font-family: harriet display, serif;
+  font-style: italic;
+  font-size: 2.25em;
+  background-color: #fdf900;
+  line-height: 0.6em;
+  width: 5.7em;
+  color: #35313f; }
+/* line 14, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+.m-hp-latest a {
+  text-decoration: none; }
+  /* line 16, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+  .m-hp-latest a:before {
+    background: none; }
+/* line 21, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+.m-hp-latest .m-hp-latest__block {
+  width: 75%;
+  margin: 3em auto 0 auto; }
+  /* line 24, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+  .m-hp-latest .m-hp-latest__block ul {
+    font-family: alright sans, sans-serif;
+    color: #0031ff;
+    font-size: .95em; }
+    /* line 28, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+    .m-hp-latest .m-hp-latest__block ul li {
+      margin-bottom: 1.5em;
+      line-height: 1.25;
+      color: #456275;
+      font-weight: 600; }
+  /* line 35, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+  .m-hp-latest .m-hp-latest__block span {
+    color: gray;
+    font-size: .65em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 1em; }
+/* line 44, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+.m-hp-latest .m-hp-latest__footer {
+  width: 100%;
+  padding: 2em 0;
+  background-color: #fdf900;
+  position: absolute;
+  bottom: 0px; }
+  /* line 50, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+  .m-hp-latest .m-hp-latest__footer span {
+    font-family: balto, sans-serif;
+    font-weight: 900;
+    color: #35313f;
+    font-size: 1.25em;
+    position: absolute;
+    right: 1.5em;
+    bottom: 1em; }
+    /* line 57, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+    .m-hp-latest .m-hp-latest__footer span img {
+      top: 3px;
+      left: 3px;
+      position: relative; }
+/* line 66, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+.m-hp-latest .sponsored:before {
+  content: "Presented by: " url(../images/bp.png);
+  height: auto;
+  display: block;
+  font-size: .75em;
+  margin-bottom: .75em;
+  font-weight: 400; }
+/* line 77, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+.m-hp-latest.c1 h2 {
+  font-family: harriet display, serif;
+  font-style: italic;
+  font-size: 2.25em;
+  background-color: #fdf900;
+  line-height: 0.6em;
+  width: 5.7em;
+  color: #35313f; }
+/* line 85, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+.m-hp-latest.c1 a {
+  text-decoration: none; }
+  /* line 87, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+  .m-hp-latest.c1 a:before {
+    background: none; }
+/* line 92, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+.m-hp-latest.c1 .m-hp-latest__block {
+  width: 75%;
+  margin: 3em auto 0 auto; }
+  /* line 95, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+  .m-hp-latest.c1 .m-hp-latest__block ul {
+    font-family: alright sans, sans-serif;
+    color: #0031ff;
+    font-size: .95em; }
+    /* line 99, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+    .m-hp-latest.c1 .m-hp-latest__block ul li {
+      margin-bottom: 1.5em;
+      line-height: 1.25;
+      color: #456275;
+      font-weight: 600; }
+  /* line 106, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+  .m-hp-latest.c1 .m-hp-latest__block span {
+    color: gray;
+    font-size: .65em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 1em; }
+/* line 115, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+.m-hp-latest.c1 .m-hp-latest__footer {
+  width: 100%;
+  padding: 2em 0;
+  background-color: #fdf900;
+  position: absolute;
+  bottom: 0px; }
+  /* line 121, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+  .m-hp-latest.c1 .m-hp-latest__footer span {
+    font-family: balto, sans-serif;
+    font-weight: 900;
+    color: #35313f;
+    font-size: 1.25em;
+    position: absolute;
+    right: 1.5em;
+    bottom: 1em; }
+    /* line 128, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+    .m-hp-latest.c1 .m-hp-latest__footer span img {
+      top: 3px;
+      position: relative; }
+/* line 135, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-latest.scss */
+.m-hp-latest.c1 .sponsored:before {
+  content: "Presented by: " url(../images/bp.png);
+  height: auto;
+  display: block;
+  font-size: .75em;
+  margin-bottom: .75em;
+  font-weight: 400; }
+
+/* line 25, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_tags.scss */
+.m-hp-storystream a:after {
+  -webkit-transform: translatey(-100%);
+  -moz-transform: translatey(-100%);
+  -ms-transform: translatey(-100%);
+  -o-transform: translatey(-100%);
+  transform: translatey(-100%);
+  font-family: alright sans;
+  font-size: 11px;
+  height: 17px;
+  padding: 3px 10px 0px 5px;
+  top: 0;
+  left: 2.75em;
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+  content: "storystream";
+  background-color: #ffeb00; }
+/* line 10, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+.m-hp-storystream .m-hp-storystream__block-right {
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 15%; }
+  /* line 15, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+  .m-hp-storystream .m-hp-storystream__block-right h2 {
+    font-family: harriet display, serif;
+    font-style: italic;
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: .25em;
+    line-height: 1em;
+    text-align: center; }
+  /* line 38, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_mixin.scss */
+  .m-hp-storystream .m-hp-storystream__block-right .byline {
+    color: white;
+    font-family: harriet;
+    font-style: italic;
+    font-size: .8em; }
+    /* line 43, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_mixin.scss */
+    .m-hp-storystream .m-hp-storystream__block-right .byline .author {
+      color: #6d98a8; }
+  /* line 25, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+  .m-hp-storystream .m-hp-storystream__block-right ul li {
+    font-family: alright sans, sans-serif;
+    color: white;
+    font-size: .9em;
+    list-style: inherit;
+    text-align: center; }
+    /* line 31, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+    .m-hp-storystream .m-hp-storystream__block-right ul li:after {
+      content: "";
+      display: block;
+      height: 20px;
+      margin: .25em auto;
+      width: 1%;
+      border: 0;
+      border-left: 3px solid transparent;
+      -webkit-border-image: url(../images/dots.png) 9 9 round;
+      -o-border-image: url(../images/dots.png) 9 9 round;
+      border-image: url(../images/dots.png) 9 9 round;
+      opacity: 0.75; }
+    /* line 46, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+    .m-hp-storystream .m-hp-storystream__block-right ul li:last-child:after {
+      content: url("../images/arrow3.png");
+      display: block;
+      height: 20px;
+      margin: .25em auto;
+      width: 26px;
+      position: relative;
+      top: -17px;
+      left: -2px;
+      border: none;
+      opacity: 0.75; }
+    /* line 59, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+    .m-hp-storystream .m-hp-storystream__block-right ul li:first-child {
+      margin-top: 2.5em; }
+      /* line 61, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+      .m-hp-storystream .m-hp-storystream__block-right ul li:first-child:before {
+        content: "updates";
+        text-transform: uppercase;
+        display: block;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.3);
+        width: 6em;
+        color: #ffeb00;
+        margin: 0 auto;
+        font-size: .8em;
+        font-weight: 600;
+        top: -17px;
+        left: -2px;
+        opacity: 0.75; }
+/* line 81, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+.m-hp-storystream .m-hp-storystream__block-left {
+  display: none; }
+/* line 86, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+.m-hp-storystream .m-hp-storystream__footer {
+  width: 100%;
+  padding: 2em 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 0px; }
+  /* line 92, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+  .m-hp-storystream .m-hp-storystream__footer span {
+    font-family: harriet, serif;
+    font-style: italic;
+    color: #6d98a8;
+    font-size: 1em;
+    bottom: 1.5em;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0); }
+/* line 106, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+.m-hp-storystream.c2 .m-hp-storystream__block-right {
+  position: absolute;
+  width: 55%;
+  margin: 0 0;
+  top: 5%;
+  right: 5%; }
+  /* line 112, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+  .m-hp-storystream.c2 .m-hp-storystream__block-right h2 {
+    font-family: harriet display, serif;
+    font-style: italic;
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: .25em;
+    line-height: 1em;
+    text-align: left; }
+  /* line 38, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_mixin.scss */
+  .m-hp-storystream.c2 .m-hp-storystream__block-right .byline {
+    color: white;
+    font-family: harriet;
+    font-style: italic;
+    font-size: .8em; }
+    /* line 43, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_mixin.scss */
+    .m-hp-storystream.c2 .m-hp-storystream__block-right .byline .author {
+      color: #6d98a8; }
+  /* line 121, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+  .m-hp-storystream.c2 .m-hp-storystream__block-right ul {
+    list-style-image: url("../images/bullet.png");
+    margin-left: 5%; }
+    /* line 124, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+    .m-hp-storystream.c2 .m-hp-storystream__block-right ul li {
+      font-family: alright sans, sans-serif;
+      color: white;
+      margin-bottom: 1.25em;
+      font-size: .9em;
+      list-style: inherit;
+      text-align: left; }
+      /* line 131, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+      .m-hp-storystream.c2 .m-hp-storystream__block-right ul li:after {
+        content: none; }
+      /* line 135, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+      .m-hp-storystream.c2 .m-hp-storystream__block-right ul li:first-child:before {
+        content: none; }
+      /* line 140, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+      .m-hp-storystream.c2 .m-hp-storystream__block-right ul li:last-child:after {
+        content: none; }
+/* line 149, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+.m-hp-storystream.c2 .m-hp-storystream__block-left {
+  display: block;
+  position: absolute;
+  bottom: 2em;
+  left: 25%;
+  height: 63%;
+  width: 16.25%;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 0px;
+  border-top: 0px;
+  -webkit-border-image: url(../images/dots.png) 9 9 round;
+  -o-border-image: url(../images/dots.png) 9 9 round;
+  border-image: url(../images/dots.png) 9 9 round;
+  opacity: 0.75; }
+  /* line 164, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+  .m-hp-storystream.c2 .m-hp-storystream__block-left:after {
+    content: url(../images/arrow.png);
+    height: auto;
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    left: -10px; }
+/* line 176, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-storystream.scss */
+.m-hp-storystream.c2 .m-hp-storystream__footer span {
+  font-family: harriet, serif;
+  font-style: italic;
+  left: 5em;
+  bottom: 1.5em; }
+
+/* line 25, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_tags.scss */
+.m-hp-video a:after {
+  -webkit-transform: translatey(-100%);
+  -moz-transform: translatey(-100%);
+  -ms-transform: translatey(-100%);
+  -o-transform: translatey(-100%);
+  transform: translatey(-100%);
+  font-family: alright sans;
+  font-size: 11px;
+  height: 17px;
+  padding: 3px 10px 0px 5px;
+  top: 0;
+  left: 2.75em;
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+  content: "video";
+  background-color: #ffeb00; }
+/* line 7, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-video.scss */
+.m-hp-video .m-hp-video__block {
+  position: absolute;
+  bottom: 2em;
+  left: 2em; }
+  /* line 11, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-video.scss */
+  .m-hp-video .m-hp-video__block .video-button {
+    background-color: #ffeb00;
+    padding: .95em 2em;
+    width: 5em;
+    height: 3.5em;
+    float: none;
+    margin: 0 0 1em 0; }
+    /* line 18, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-video.scss */
+    .m-hp-video .m-hp-video__block .video-button img {
+      width: 100%; }
+  /* line 22, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-video.scss */
+  .m-hp-video .m-hp-video__block h2 {
+    font-family: balto, sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    color: white;
+    margin-bottom: .25em; }
+  /* line 38, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_mixin.scss */
+  .m-hp-video .m-hp-video__block .byline {
+    color: white;
+    font-family: harriet;
+    font-style: italic;
+    font-size: .8em; }
+    /* line 43, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_mixin.scss */
+    .m-hp-video .m-hp-video__block .byline .author {
+      color: #6d98a8; }
+/* line 35, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-video.scss */
+.m-hp-video.c2 .m-hp-video__block .video-button, .m-hp-video.c3 .m-hp-video__block .video-button, .m-hp-video.c4 .m-hp-video__block .video-button {
+  float: none;
+  margin: 0 0 1em 0;
+  padding: .95em 3.25em;
+  width: 9em;
+  height: 6em; }
+
+/* line 4, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-icons.scss */
+.m-breaker {
+  margin-bottom: 13px;
+  overflow: auto;
+  white-space: nowrap; }
+  /* line 6, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-icons.scss */
+  .m-breaker img {
+    width: 100%; }
+
+/* line 13, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-icons.scss */
+.m-breaker__icons {
+  display: inline-block;
+  text-align: center;
+  padding: 1em 2em;
+  width: 100%;
+  white-space: normal;
+  overflow: hidden; }
+  /* line 20, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-icons.scss */
+  .m-breaker__icons h2 {
+    font-family: 'Harriet Display', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2.2em; }
+  /* line 26, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-icons.scss */
+  .m-breaker__icons li {
+    line-height: 1;
+    margin-bottom: 1.34em;
+    font-size: .8em; }
+  @media (min-width: 678px) {
+    /* line 13, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-icons.scss */
+    .m-breaker__icons {
+      width: 50%; } }
+  @media (min-width: 1017px) {
+    /* line 13, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-icons.scss */
+    .m-breaker__icons {
+      width: 33.33333%; } }
+  @media (min-width: 1356px) {
+    /* line 13, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-icons.scss */
+    .m-breaker__icons {
+      width: 25%; } }
+
+/* line 40, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-icons.scss */
+.m-breaker__icon {
+  width: 6em;
+  height: 6em;
+  display: block;
+  margin: 0 auto;
+  position: relative; }
+
+/* line 4, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
+.m-breaker {
+  margin-bottom: 13px;
+  overflow: auto;
+  white-space: nowrap; }
+  /* line 8, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
+  .m-breaker img {
+    width: 100%; }
+
+/* line 13, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
+.m-breaker__videos {
+  margin: 0 -13px; }
+
+/* line 17, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
+.m-breaker__video {
+  display: inline-block;
+  width: 100%;
+  white-space: normal;
+  overflow: hidden;
+  margin: 26px 0 13px;
+  position: relative;
+  height: 250px; }
+  /* line 25, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_tags.scss */
+  .m-breaker__video a:after {
+    -webkit-transform: translatey(-100%);
+    -moz-transform: translatey(-100%);
+    -ms-transform: translatey(-100%);
+    -o-transform: translatey(-100%);
+    transform: translatey(-100%);
+    font-family: alright sans;
+    font-size: 11px;
+    height: 17px;
+    padding: 3px 10px 0px 5px;
+    top: 0;
+    left: 2.75em;
+    position: absolute;
+    z-index: 1;
+    text-transform: uppercase;
+    content: "video";
+    background-color: #ffeb00; }
+  /* line 26, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
+  .m-breaker__video a {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 13px;
+    bottom: 13px;
+    left: 13px; }
+  @media (min-width: 678px) {
+    /* line 17, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
+    .m-breaker__video {
+      width: 50%; } }
+  @media (min-width: 1017px) {
+    /* line 17, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
+    .m-breaker__video {
+      width: 33.33333%; } }
+  @media (min-width: 1356px) {
+    /* line 17, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
+    .m-breaker__video {
+      width: 25%; } }
+
+/* line 47, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
+.m-breaker__video-footer {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 30%; }
+  /* line 53, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
+  .m-breaker__video-footer .video-button {
+    height: 100%;
+    width: 25%;
+    display: block;
+    background-color: yellow;
+    float: left; }
+  /* line 60, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
+  .m-breaker__video-footer h3 {
+    float: left;
+    color: #ffffff;
+    width: 70%;
+    font-size: 1em;
+    line-height: 1em;
+    margin-left: 5%; }
+
+/* line 4, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-authors.scss */
+.m-breaker {
+  margin-bottom: 13px;
+  overflow: auto;
+  white-space: nowrap; }
+  /* line 6, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-authors.scss */
+  .m-breaker img {
+    width: 100%; }
+
+/* line 13, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-authors.scss */
+.m-breaker__author {
+  display: inline-block;
+  text-align: center;
+  padding: 1em 2em;
+  width: 100%;
+  white-space: normal;
+  overflow: hidden; }
+  /* line 20, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-authors.scss */
+  .m-breaker__author h2 {
+    font-family: 'Harriet Display', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2.2em; }
+  /* line 26, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-authors.scss */
+  .m-breaker__author li {
+    line-height: 1;
+    margin-bottom: 1.34em;
+    font-size: .8em; }
+  @media (min-width: 678px) {
+    /* line 13, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-authors.scss */
+    .m-breaker__author {
+      width: 50%; } }
+  @media (min-width: 1017px) {
+    /* line 13, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-authors.scss */
+    .m-breaker__author {
+      width: 33.33333%; } }
+  @media (min-width: 1356px) {
+    /* line 13, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-authors.scss */
+    .m-breaker__author {
+      width: 25%; } }
+
+/* line 40, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-authors.scss */
+.m-breaker__image {
+  width: 6em;
+  height: 6em;
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative; }
+  /* line 47, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-authors.scss */
+  .m-breaker__image img {
+    border-radius: 50%; }
+
+/* line 4, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
+.m-breaker__container {
+  margin-top: 4em; }
+  /* line 6, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
+  .m-breaker__container hr {
+    position: relative;
+    border-left: none;
+    border-right: none;
+    border-bottom: none; }
+    /* line 11, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
+    .m-breaker__container hr:after {
+      position: absolute;
+      right: 0;
+      top: -12px;
+      padding: 0 1em;
+      background-color: #EDEDED;
+      content: "see more";
+      display: block; }
+
+/* line 23, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
+.m-breaker__cardstacks {
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  margin-top: 1em; }
+
+/* line 30, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
+.m-breaker__cards {
+  display: inline-block;
+  height: 18em;
+  position: relative;
+  margin-right: 2.666%;
+  margin-bottom: 2.5em;
+  box-shadow: 4px 3px rgba(255, 255, 255, 0.7), 8px 6px rgba(255, 255, 255, 0.6);
+  transition: all .1s; }
+  /* line 25, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_tags.scss */
+  .m-breaker__cards a:after {
+    -webkit-transform: translatey(-100%);
+    -moz-transform: translatey(-100%);
+    -ms-transform: translatey(-100%);
+    -o-transform: translatey(-100%);
+    transform: translatey(-100%);
+    font-family: alright sans;
+    font-size: 11px;
+    height: 17px;
+    padding: 3px 10px 0px 5px;
+    top: 0;
+    left: 2.75em;
+    position: absolute;
+    z-index: 1;
+    text-transform: uppercase;
+    content: "cards stack";
+    background-color: #ffeb00; }
+  /* line 39, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
+  .m-breaker__cards:hover {
+    box-shadow: 6px 4px rgba(255, 255, 255, 0.7), 10px 8px rgba(255, 255, 255, 0.6); }
+  /* line 42, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
+  .m-breaker__cards:last-child {
+    margin-right: 0%; }
+  /* line 45, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
+  .m-breaker__cards li {
+    line-height: 1;
+    margin-bottom: 1.34em;
+    font-size: .8em; }
+  /* line 50, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
+  .m-breaker__cards .card__lede {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    /* line 60, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
+    .m-breaker__cards .card__lede h3 {
+      font-family: balto, sans-serif;
+      font-weight: 900;
+      font-weight: 900;
+      font-size: 1.5em;
+      color: #333434;
+      padding-left: .75em;
+      float: left;
+      width: 90%;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.1; }
+      /* line 70, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
+      .m-breaker__cards .card__lede h3 span {
+        background-color: #fff200; }
+  /* line 75, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
+  .m-breaker__cards .card__footer {
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    background-color: white;
+    width: 100%; }
+    /* line 81, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
+    .m-breaker__cards .card__footer h3 {
+      font-family: balto, sans-serif;
+      font-weight: 900;
+      font-size: 1em;
+      color: white;
+      padding-left: 1em;
+      float: left;
+      width: 75%;
+      -webkit-font-smoothing: antialiased; }
+  @media (min-width: 678px) {
+    /* line 30, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
+    .m-breaker__cards {
+      width: 48%; } }
+  @media (min-width: 1017px) {
+    /* line 30, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
+    .m-breaker__cards {
+      width: 31.33333%; } }
+  @media (min-width: 1356px) {
+    /* line 30, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
+    .m-breaker__cards {
+      width: 23%; } }
+
+/* line 4, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-alt_cardstacks.scss */
+.m-breaker__container {
+  margin-top: 4em; }
+  /* line 6, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-alt_cardstacks.scss */
+  .m-breaker__container hr {
+    position: relative;
+    border-left: none;
+    border-right: none;
+    border-bottom: none; }
+    /* line 11, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-alt_cardstacks.scss */
+    .m-breaker__container hr:after {
+      position: absolute;
+      right: 0;
+      top: -12px;
+      padding: 0 1em;
+      background-color: #EDEDED;
+      content: "see more";
+      display: block; }
+
+/* line 23, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-alt_cardstacks.scss */
+.m-breaker__alt-cardstacks {
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  margin-top: 1em; }
+
+/* line 30, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-alt_cardstacks.scss */
+.m-breaker__alt-cards {
+  display: inline-block;
+  height: 18em;
+  position: relative;
+  margin-right: 2.666%;
+  margin-bottom: 2.5em;
+  box-shadow: 4px 3px rgba(255, 255, 255, 0.7), 8px 6px rgba(255, 255, 255, 0.6);
+  transition: all .1s; }
+  /* line 25, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_tags.scss */
+  .m-breaker__alt-cards a:after {
+    -webkit-transform: translatey(-100%);
+    -moz-transform: translatey(-100%);
+    -ms-transform: translatey(-100%);
+    -o-transform: translatey(-100%);
+    transform: translatey(-100%);
+    font-family: alright sans;
+    font-size: 11px;
+    height: 17px;
+    padding: 3px 10px 0px 5px;
+    top: 0;
+    left: 2.75em;
+    position: absolute;
+    z-index: 1;
+    text-transform: uppercase;
+    content: "cards stack";
+    background-color: #ffeb00; }
+  /* line 39, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-alt_cardstacks.scss */
+  .m-breaker__alt-cards:hover {
+    box-shadow: 6px 4px rgba(255, 255, 255, 0.7), 10px 8px rgba(255, 255, 255, 0.6); }
+  /* line 42, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-alt_cardstacks.scss */
+  .m-breaker__alt-cards:last-child {
+    margin-right: 0%; }
+  /* line 45, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-alt_cardstacks.scss */
+  .m-breaker__alt-cards li {
+    line-height: 1;
+    margin-bottom: 1.34em;
+    font-size: .8em; }
+  /* line 50, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-alt_cardstacks.scss */
+  .m-breaker__alt-cards .card__lede {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    /* line 60, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-alt_cardstacks.scss */
+    .m-breaker__alt-cards .card__lede h3 {
+      font-family: balto, sans-serif;
+      font-weight: 900;
+      font-weight: 900;
+      font-size: 1.5em;
+      color: #333434;
+      padding-left: .75em;
+      float: left;
+      width: 90%;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.1; }
+      /* line 70, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-alt_cardstacks.scss */
+      .m-breaker__alt-cards .card__lede h3 span {
+        background-color: #fff200; }
+  /* line 75, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-alt_cardstacks.scss */
+  .m-breaker__alt-cards .card__footer {
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    background-color: white;
+    width: 100%; }
+    /* line 81, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-alt_cardstacks.scss */
+    .m-breaker__alt-cards .card__footer h3 {
+      font-family: balto, sans-serif;
+      font-weight: 900;
+      font-size: 1em;
+      color: white;
+      padding-left: 1em;
+      float: left;
+      width: 75%;
+      -webkit-font-smoothing: antialiased; }
+  @media (min-width: 678px) {
+    /* line 30, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-alt_cardstacks.scss */
+    .m-breaker__alt-cards {
+      width: 48%; } }
+  @media (min-width: 1017px) {
+    /* line 30, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-alt_cardstacks.scss */
+    .m-breaker__alt-cards {
+      width: 31.33333%; } }
+  @media (min-width: 1356px) {
+    /* line 30, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-alt_cardstacks.scss */
+    .m-breaker__alt-cards {
+      width: 23%; } }
+
+/* line 4, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
+.m-breaker__container {
+  margin-top: 4em; }
+  /* line 6, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
+  .m-breaker__container hr {
+    position: relative;
+    border-left: none;
+    border-right: none;
+    border-bottom: none; }
+    /* line 11, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
+    .m-breaker__container hr:after {
+      position: absolute;
+      right: 0;
+      top: -12px;
+      padding: 0 1em;
+      background-color: #EDEDED;
+      content: "see more";
+      display: block; }
+
+/* line 23, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
+.m-breaker__headlines {
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  margin-top: 1em; }
+
+/* line 30, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
+.m-breaker__headline-stories {
+  display: inline-block;
+  height: 18em;
+  position: relative;
+  margin-right: 2.666%;
+  margin-bottom: 2.5em;
+  box-shadow: 4px 3px rgba(255, 255, 255, 0.7), 8px 6px rgba(255, 255, 255, 0.6);
+  transition: all .1s; }
+  /* line 25, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_tags.scss */
+  .m-breaker__headline-stories a:after {
+    -webkit-transform: translatey(-100%);
+    -moz-transform: translatey(-100%);
+    -ms-transform: translatey(-100%);
+    -o-transform: translatey(-100%);
+    transform: translatey(-100%);
+    font-family: alright sans;
+    font-size: 11px;
+    height: 17px;
+    padding: 3px 10px 0px 5px;
+    top: 0;
+    left: 2.75em;
+    position: absolute;
+    z-index: 1;
+    text-transform: uppercase;
+    content: "cards stack";
+    background-color: #ffeb00; }
+  /* line 39, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
+  .m-breaker__headline-stories:hover {
+    box-shadow: 6px 4px rgba(255, 255, 255, 0.7), 10px 8px rgba(255, 255, 255, 0.6); }
+  /* line 42, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
+  .m-breaker__headline-stories:last-child {
+    margin-right: 0%; }
+  /* line 45, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
+  .m-breaker__headline-stories li {
+    line-height: 1;
+    margin-bottom: 1.34em;
+    font-size: .8em; }
+  /* line 50, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
+  .m-breaker__headline-stories .card__lede {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    /* line 60, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
+    .m-breaker__headline-stories .card__lede h3 {
+      font-family: balto, sans-serif;
+      font-weight: 900;
+      font-weight: 900;
+      font-size: 1.5em;
+      color: #333434;
+      padding-left: .75em;
+      float: left;
+      width: 90%;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.1; }
+      /* line 70, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
+      .m-breaker__headline-stories .card__lede h3 span {
+        background-color: #fff200; }
+  /* line 75, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
+  .m-breaker__headline-stories .card__footer {
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    background-color: white;
+    width: 100%; }
+    /* line 81, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
+    .m-breaker__headline-stories .card__footer h3 {
+      font-family: balto, sans-serif;
+      font-weight: 900;
+      font-size: 1em;
+      color: white;
+      padding-left: 1em;
+      float: left;
+      width: 75%;
+      -webkit-font-smoothing: antialiased; }
+  @media (min-width: 678px) {
+    /* line 30, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
+    .m-breaker__headline-stories {
+      width: 56.3%; } }
+  @media (min-width: 1017px) {
+    /* line 30, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
+    .m-breaker__headline-stories {
+      width: 39.63333%; } }
+  @media (min-width: 1356px) {
+    /* line 30, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
+    .m-breaker__headline-stories {
+      width: 31.3%; } }
