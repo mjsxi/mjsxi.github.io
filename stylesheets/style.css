@@ -396,21 +396,22 @@ body {
   width: 35%;
   float: left;
   font-size: .9em;
-  padding-top: 25%; }
-  /* line 94, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+  padding-top: 25%;
+  padding-left: 0em; }
+  /* line 95, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
   .m-hp-beat.c2 .m-hp-beat__block .block__side span {
     display: none; }
-  /* line 97, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+  /* line 98, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
   .m-hp-beat.c2 .m-hp-beat__block .block__side li {
     margin-bottom: 1.5em; }
-/* line 102, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+/* line 103, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
 .m-hp-beat.c2 .m-hp-beat__footer {
   width: 100%;
   padding: 2em 0;
   background-color: rgba(0, 0, 0, 0.25);
   position: absolute;
   bottom: 0px; }
-  /* line 108, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
+  /* line 109, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-beat.scss */
   .m-hp-beat.c2 .m-hp-beat__footer span {
     font-family: balto, sans-serif;
     font-weight: 900;
