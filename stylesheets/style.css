@@ -859,7 +859,7 @@ body {
 /* line 4, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-icons.scss */
 .m-breaker {
   margin-bottom: 13px;
-  overflow: auto;
+  overflow: hidden;
   white-space: nowrap; }
   /* line 6, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-icons.scss */
   .m-breaker img {
@@ -908,7 +908,7 @@ body {
 /* line 4, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
 .m-breaker {
   margin-bottom: 13px;
-  overflow: auto;
+  overflow: hidden;
   white-space: nowrap; }
   /* line 8, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
   .m-breaker img {
@@ -926,7 +926,7 @@ body {
   overflow: hidden;
   margin: 26px 0 26px;
   position: relative;
-  height: 250px; }
+  height: 270px; }
   /* line 25, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_tags.scss */
   .m-breaker__video a:after {
     -webkit-transform: translatey(-100%);
@@ -958,13 +958,14 @@ body {
     position: absolute;
     top: 20px;
     right: 13px;
-    bottom: 26px;
+    bottom: 46px;
     left: 13px; }
   /* line 39, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
   .m-breaker__video h3 {
     position: absolute;
-    bottom: -26px;
-    left: 13px; }
+    bottom: -16px;
+    left: 13px;
+    font-size: .9em; }
   @media (min-width: 678px) {
     /* line 17, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
     .m-breaker__video {
@@ -978,21 +979,21 @@ body {
     .m-breaker__video {
       width: 25%; } }
 
-/* line 54, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
+/* line 55, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
 .m-breaker__video-footer {
   position: absolute;
   bottom: 0px;
   width: 100%;
   height: 30%; }
-  /* line 59, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
+  /* line 60, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
   .m-breaker__video-footer .video-button {
     height: 100%;
-    width: 25%;
+    width: 80px;
     display: block;
     background-color: yellow;
     float: left;
     padding: .85em 1.75em 0 1.75em; }
-  /* line 67, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
+  /* line 69, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
   .m-breaker__video-footer h3 {
     float: left;
     color: #ffffff;
@@ -1004,7 +1005,7 @@ body {
 /* line 4, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-authors.scss */
 .m-breaker {
   margin-bottom: 13px;
-  overflow: auto;
+  overflow: hidden;
   white-space: nowrap; }
   /* line 6, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-authors.scss */
   .m-breaker img {
@@ -1057,7 +1058,7 @@ body {
 /* line 4, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
 .m-breaker {
   margin-bottom: 13px;
-  overflow: auto;
+  overflow: hidden;
   white-space: nowrap; }
   /* line 8, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-cardstacks.scss */
   .m-breaker img {
@@ -1290,7 +1291,7 @@ body {
 /* line 4, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
 .m-breaker {
   margin-bottom: 13px;
-  overflow: auto;
+  overflow: hidden;
   white-space: nowrap; }
   /* line 8, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ME.scss */
   .m-breaker img {
