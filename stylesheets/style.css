@@ -71,6 +71,10 @@ html, body, ol, ul, li {
   src: url(http://cdn0.vox-cdn.com/fonts/vox/voxicon.v283a236.eot);
   src: url(http://cdn1.vox-cdn.com/fonts/vox/voxicon.vf47633f.woff) format("woff"), url(http://cdn1.vox-cdn.com/fonts/vox/voxicon.v7f854b5.ttf) format("truetype"); }
 
+/* line 1, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-page.scss */
+body {
+  width: 90%; }
+
 /* line 8, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_m-entries.scss */
 .m-entries {
   margin: 0 -13px;
@@ -240,6 +244,17 @@ body {
   /* line 10, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-ad.scss */
   .m-hp-ad a:before {
     display: none; }
+
+/* line 23, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-entry/_m-ad.scss */
+.ad-space {
+  background-image: url(/images/fade.png);
+  height: 1000px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: translateY(-120px); }
 
 /* line 25, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_tags.scss */
 .m-hp-article a:after {
@@ -927,7 +942,7 @@ body {
   overflow: hidden;
   margin: 26px 0 26px;
   position: relative;
-  height: 270px; }
+  height: 280px; }
   /* line 25, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/_tags.scss */
   .m-breaker__video a:after {
     -webkit-transform: translatey(-100%);
@@ -964,9 +979,9 @@ body {
   /* line 39, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
   .m-breaker__video h3 {
     position: absolute;
-    bottom: -16px;
+    bottom: -26px;
     left: 13px;
-    font-size: .9em; }
+    font-size: .95em; }
   @media (min-width: 678px) {
     /* line 17, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-videos.scss */
     .m-breaker__video {
@@ -1028,7 +1043,7 @@ body {
     font-size: 1.8em; }
   /* line 26, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-authors.scss */
   .m-breaker__author li {
-    line-height: 1;
+    line-height: 1.25em;
     margin-bottom: 1.34em;
     font-size: .8em; }
   @media (min-width: 678px) {
@@ -1393,7 +1408,6 @@ body {
 /* line 7, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ad.scss */
 .m-breaker__ad {
   width: 100%;
-  height: 10em;
   background-color: #9F9F9F; }
 
 /* line 7, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ad__athena.scss */
