@@ -1409,8 +1409,3 @@ body {
 .m-breaker__ad {
   width: 100%;
   background-color: #9F9F9F; }
-
-/* line 7, /Users/Matt/Projects/vox-hp-prototype/source/stylesheets/modules/hp-breaker/_breaker-ad__athena.scss */
-.m-breaker__athena {
-  padding-left: 10%;
-  padding-right: 10%; }
