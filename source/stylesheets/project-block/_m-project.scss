@@ -1,0 +1,153 @@
+$m: '.m-project';
+
+// main block for the 
+#{$m}--block {
+  width: 100%;
+  @extend %clearfix;
+}
+
+// effects the first two blocks on 
+// the homepage
+#{$m}_head--container{
+  @include value-prefix (display, flex);
+  @media (max-width: $break_small) {
+    display: block;
+  }
+  #{$m} {
+    @include hover(1);
+    h2 {
+      color: $white;
+      font-family: sans-serif;
+      font-size: 10em;
+      text-align: center;
+      padding-top: 1.25rem;
+      @media (max-width: $break_small) {
+        font-size: 9em;
+      }
+    }
+  }
+  .s3 {
+    padding-left: 1em;
+    @media (max-width: $break_small) {
+      width: 100%;
+    }
+    @media (max-width: $break_small) {
+      padding-left: 0em;
+      padding-top: .75em;
+      padding-bottom: .75em;
+    }
+  }
+  p {
+    margin: .8em 0;
+    font-family: $alright;
+    line-height: 1.35em;
+    &:first-child {
+      a {
+        color: $voxmedia;
+      }
+    }
+    &:last-child {
+      a {
+        color: $default-color;
+      }
+    }
+  }
+  a {
+    @include vendor-prefix (transition, all 0.3s);
+    @include hover(.6);
+    font-family: $harriet-display;
+    font-style: italic;
+    font-size: 1.05em;
+    &:nth-child(1){
+      color: $voxdotcom;
+    }
+    &:nth-child(2){
+      color: $polygon;
+    }
+    &:nth-child(3){
+      color: $theverge;
+    }
+  }
+  @extend %clearfix;
+}
+
+#{$m}--footer {
+  hr {
+    border: none;
+    border-bottom: 1px solid #C6C6C6;
+    &:first-child {
+      margin-top: 1.5em;
+    }
+  }
+  .link--container {
+    margin: 1em auto;
+    display: table;
+  }
+  a {
+    @include vendor-prefix(transition, all 0.3s);
+    @include hover(.6);
+    color: $default-color;
+    display: inline-block;
+    font-family: $harriet-display;
+    font-size: 1.05em;
+    font-style: italic;
+    margin: 0 .5em;
+    text-align: center;
+  }
+}
+
+
+// this effects all project blocks
+#{$m} {
+  @include vendor-prefix(transition, all 0.3s);
+  @include hover(.8);
+  background-position: center center; 
+  background-size: cover;
+  float: left;
+  min-height: 195px;
+  @media (max-width: $break_small) {
+    min-height: 150px;
+  }
+}
+
+// sizes the porjects blocks
+.s1 {
+  width: 25%;
+  //background-color: red;
+  @media (max-width: $break_small) {
+    width: 50%;
+  }
+}
+
+.s2 {
+  width: 50%;
+  //background-color: green;
+}
+
+.s3 {
+  width: 75%;
+  //background-color: blue;
+  @media (max-width: $break_small) {
+    width: 100%;
+  }
+}
+
+.s4 {
+  width: 100%;
+  //background-color: black;
+}
+
+//This changed the river to be whatever
+//I need it to be so there is no weirdness
+#{$m}--block {
+  a:last-child {
+    .s1,
+    .s2,
+    .s3,
+    .s4 {
+      @media (max-width: $break_small) {
+        width: 100%;
+      }
+    }
+  }
+}

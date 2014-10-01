@@ -1,0 +1,50 @@
+//stole this from Ally Palanzi she is a 
+//genius http://www.allypalanzi.com/
+
+// config
+$debug: false;
+
+// create sass list to pass media query data
+// if a breakpoint name changes, remember to
+// update it in the list below as well
+$mq-sync:
+  break_xsmall $break_xsmall,
+  break_small $break_small,
+  break_medium_small $break_medium_small,
+  break_medium $break_medium,
+  break_large_medium $break_large_medium,
+  break_large $break_large,
+  break_xlarge_large $break_xlarge
+;
+
+// build each media query for js ingestion
+@each $mq in $mq-sync {
+  @media screen and (min-width: nth($mq, 2)) {
+    body:after { content: "#{nth($mq, 1)} - min-width: #{nth($mq, 2)}"; }
+  }
+}
+
+body.debug {
+  &:after {
+    display: none;
+    @if $debug == true {
+      background-color: #000;
+      background-color: rgba(0,0,0,0.8);
+      bottom: 0;
+      color: #FFF;
+      display: block;
+      font-family: sans-serif;
+      font-size: 12px;
+      left: 0;
+      padding: 10px;
+      position: fixed;
+      text-align: center;
+      width: 100%;
+      z-index: 1000;
+    }
+  }
+}
+
+// hide elements for conditional loading
+// only used for responsive comments plugin
+// *[data-usn-if] { display: none; }

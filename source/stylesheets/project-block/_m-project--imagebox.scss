@@ -1,0 +1,107 @@
+$m: '.m-project--imagebox';
+
+#{$m} {
+  width: 100%;
+  margin-bottom: 2em;
+  @media (max-width: $break_medium_small) {
+    margin-bottom: 1em;
+  }
+  @extend %clearfix;
+  .imagebox-left,
+  .imagebox-right {
+    float: left;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    max-height: 500px;
+    height: 100vh;
+    @media (max-width: $break_medium) {
+      max-height: 300px;
+    }
+    @media (max-width: $break_small) {
+      background-size: contain;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+//infinity stool
+.n-33 {
+  width: 33%;
+  background-image: image-url('infinity-stool--sitting' + '.jpg');
+  @media (max-width: $break_small) {
+    width: 100%;
+  }
+  @extend %scale;
+}
+
+.n-67 {
+  width: 67%;
+  background-image: image-url('infinity-stool--apart' + '.jpg');
+  @media (max-width: $break_small) {
+    width: 100%;
+  }
+  @extend %scale;
+}
+
+//the know
+.n-32 {
+  width: 32%;
+  background-image: image-url('theknow--box' + '.jpg');
+  @media (max-width: $break_small) {
+    width: 100%;
+  }
+  @extend %scale;
+}
+
+.n-68 {
+  width: 68%;
+  background-image: image-url('theknow--jar' + '.jpg');
+  @media (max-width: $break_small) {
+    width: 100%;
+  }
+  @extend %scale;
+}
+
+//you dropped your smile
+
+.n-45 {
+  width: 45%;
+  background-image: image-url('smile--kids' + '.jpg');
+  @media (max-width: $break_small) {
+    width: 100%;
+  }
+  @extend %scale;
+}
+
+.n-top {
+  height: 250px;
+  background-image: image-url('smile--notes' + '.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @media (max-width: $break_medium) {
+    max-height: 150px;
+  }
+  @extend %scale;
+}
+
+.n-bottom {
+  height: 250px;
+  background-image: image-url('smile--girls' + '.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @media (max-width: $break_medium) {
+    max-height: 150px;
+  }
+  @extend %scale;
+}
+
+.n-55 {
+  width: 55%;
+  @media (max-width: $break_small) {
+    width: 100%;
+  }
+}
+

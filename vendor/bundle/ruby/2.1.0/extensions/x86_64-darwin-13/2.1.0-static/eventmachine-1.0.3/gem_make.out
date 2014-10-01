@@ -1,0 +1,13 @@
+/Users/Matt/.rbenv/versions/2.1.1/bin/ruby -r ./siteconf20140728-44422-1wwe4ur.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20140728-44422-t99a6f
+installing default fastfilereaderext libraries

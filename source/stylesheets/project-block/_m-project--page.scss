@@ -1,0 +1,70 @@
+$m: '.m-project--page';
+
+#{$m} {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  @media (max-width: $break_small) {
+    width: 100%;
+  }
+}
+
+.video-container,
+.issuu-container {
+  margin-top:5%;
+  position: relative;
+  padding-bottom: 53.4%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.issuu-container {
+  margin: 0 auto;
+  max-width:740px;
+}
+
+#{$m} {
+  h1 {
+    color: $default-color;
+    font-family: $harriet-display;
+    font-style: italic;
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: .5em;
+    margin-bottom: .35em;
+  }
+  ul {
+    margin-bottom: 1em;
+    li {
+      font-family: $alright;
+      font-size: .8em;
+      margin-bottom: .5em;
+      font-weight: 600;
+      color: $default-bg-color;
+      background-color: $default-color;
+      padding: .25em;
+      display: inline-block;
+    }
+  }
+  p {
+    font-family: $alright;
+    font-size: 1em;
+    margin-bottom: 1em;
+    line-height: 1.45em;
+  }
+  a {
+    @include vendor-prefix (transition, all 0.3s);
+    @include hover(.6);
+    color: $default-color;
+    font-family: $harriet-display;
+    font-style: italic;
+    font-size: 1.15em;
+  }
+}
