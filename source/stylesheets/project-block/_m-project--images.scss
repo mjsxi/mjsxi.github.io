@@ -1,5 +1,0 @@
-@for $i from 1 through 21 {
-  .img-#{$i} {
-    background-image: image-url($i + '.jpg');
-  }
-}
