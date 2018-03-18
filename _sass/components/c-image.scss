@@ -1,0 +1,54 @@
+.c-image-container {
+  overflow-x: scroll;
+  margin-bottom: .5rem;
+}
+
+.images {
+  padding-left: 1.5rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  height: 25vh;
+
+  transition: height .3s;
+  transform-origin: center center;
+
+  &.images--active {
+    height: 35vh;
+  }
+
+  @include media-query {
+    height: 42vh;
+    padding-left: calc((100% - #{$large-screen})/2);
+
+    &.images--active {
+      height: 56vh;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  img {
+    height: 25vh;
+    transition: height .3s;
+    transform-origin: center center;
+    object-fit: contain;
+
+    &.active {
+      height: 35vh;
+    }
+
+    @include media-query {
+      height: 42vh;
+      transition-delay: 0s;
+
+      &.active {
+        height: 56vh;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+---
+title: vox
+date: 2017-06-05 21:45:00 Z
+tags:
+- visual design
+- development
+alt-title: voxdotcom
+images:
+- vox-home-page-mobile.png
+- vox-home-page.png
+- vox-article-page-mobile.png
+- vox-article-page.png
+- vox-storystream-page-mobile.png
+- vox-storystream-page.png
+layout: page
+---
+
+Being a part of the original Voxdotcom design team was extremely rewarding and hectic — over the course of a few months the team went from mocks to prototypes to a full production buildout and live. During this project I was involved primarily with refining the homepage and interacting with both the design and code to focus on clarity of information, good design, and clean code.
+
+<!--more-->
+
+While my main focus was on the homepage redesign and various problem sloving involved with it I also touched a bunch of smaller things like storystreams and various interactions across the site.
+
+[vox.com](https://www.vox.com "Visit Voxdotcoms Homepage")
+
+<figure>
+  <img src="../uploads/vox-early-homepage-1.png">
+</figure>
+<cite>An early homepaage exploration</cite>
+
+<figure>
+  <img src="../uploads/vox-early-homepage-2.png">
+</figure>
+<cite>An early homepaage exploration</cite>
+
+<figure>
+  <img src="../uploads/vox-early-homepage-3.png">
+</figure>
+<cite>An early homepaage exploration</cite>

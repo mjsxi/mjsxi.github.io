@@ -1,0 +1,42 @@
+---
+layout: default-projects
+---
+
+<section class="c-post--list" data-section="{{ page.title | escape }}">
+  <div class="c-post--space" data-here=""></div>
+
+  {% if page.images %}
+    <div class="c-image-container">
+      <div class="images images--active">
+        {% for images in page.images %}
+          {% if forloop.first %}
+            <img class="active" src="{{ site.baseurl }}/images/{{images}}">
+          {% else %}
+            <img class="" src="{{ site.baseurl }}/images/{{images}}">
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.lede %}
+    <div class="c-lede-container">
+      {% for images in page.lede %}
+        <img class="" src="{{ site.baseurl }}/images/{{images}}">
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <div class="c-post--content">
+    {% if page.alt-title %}
+      <h2>{{ page.alt-title | escape }}</h2>
+    {% else %}
+      <h2>{{ page.title | escape }}</h2>
+    {% endif %}
+
+    {{ content }}
+
+    {% include page-nav.html %}
+  </div>
+
+</section>

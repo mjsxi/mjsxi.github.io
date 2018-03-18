@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+{{ content }}
+
+{% for post in site.posts reversed %}
+  <section class="c-post--list" data-section="{{ post.title | escape }}">
+    <div class="c-post--space" data-here=""></div>
+
+    {% if post.images %}
+      <div class="c-image-container">
+        <div class="images images--active">
+          {% for images in post.images %}
+            {% if forloop.index == 1 %}
+              <img class="active" src="{{ site.baseurl }}/images/{{images}}">
+            {% else %}
+              <img class="" src="{{ site.baseurl }}/images/{{images}}">
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if post.lede %}
+      <div class="c-lede-container">
+        {% for images in post.lede %}
+          <img class="" src="{{ site.baseurl }}/images/{{images}}">
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <div class="c-post--content">
+
+      {% if post.alt-title %}
+        <h2>{{ post.alt-title | escape }}</h2>
+      {% else %}
+        <h2>{{ post.title | escape }}</h2>
+      {% endif %}
+
+      {% if post.tags %}
+        <ul class="c-tags">
+          {% for tags in post.tags %}
+            <li><p>{{ tags }}</p></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {{ post.excerpt }}
+
+      {% if post.title != "about" %}
+        <a class="post-link" href="{{ post.url | relative_url }}">Read More</a>
+      {% endif %}
+
+    </div>
+
+  </section>
+{% endfor %}

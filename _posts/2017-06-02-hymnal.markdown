@@ -1,0 +1,19 @@
+---
+title: hymnal
+date: 2017-06-02 21:45:00 Z
+tags:
+- user reasearch
+- ux/visual design
+- development
+images:
+- hymnal-ad-overview.png
+- hymnal-ad-fields.png
+- hymnal-ad-code.png
+- hymnal-ad-split.png
+- hymnal-ad-test.png
+layout: page
+---
+
+For the better part of last year, I worked on the product design and development of Vox Media's proprietary custom display and native ad unit publishing platform, Hymnal.
+
+I worked on a small but mighty team on creating the best user experience possible on a platform that's a workhorse for the company's bottom line. I've had the pleasure of conducting several product design sprints with the team, guiding/contributing to everything from wireframes to sketching to prototyping to ultimately testing the platform on users.

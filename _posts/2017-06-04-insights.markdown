@@ -1,0 +1,38 @@
+---
+title: insights
+date: 2017-06-04 21:45:00 Z
+tags:
+- user reasearch
+- ux/visual design
+- development
+images:
+- insights-home-page-mobile.png
+- insights-home-page.png
+- insights-client-page.png
+- insights-pattern-page.png
+layout: page
+---
+
+I worked on a small team to help redesign our analytics platform. My duties included establishing a modular design system of patterns to help tell the story of a brand partner's performance through data.
+
+One of the main challenges of the project was to establish design patterns that would work across all types of campaigns, while pulling out the most relevant pieces of the data story. We used a blend of data visualization and natural language summaries to achive this goal.
+
+<!--more-->
+
+<figure>
+  <img src="../uploads/insights-early.jpg">
+</figure>
+
+An early iteration of Insights which included graphs and other data visualizations to help with digesting numbers and other data points.
+
+<figure>
+  <img src="../uploads/insights-early-v2.jpg">
+</figure>
+
+A sketched iteration on how to give users a peak into what types of data is included in a campaign — our goal was to try and make things easily glanceable.
+
+<figure>
+  <img src="../uploads/insights-early-v3.jpg">
+</figure>
+
+An later mock of a campaign page, which eventually shaped a good portion of the visual design of Insights.
