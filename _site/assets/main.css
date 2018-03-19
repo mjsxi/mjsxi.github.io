@@ -755,14 +755,16 @@ h2 {
     -o-object-fit: contain;
        object-fit: contain; }
     .images img.active {
-      height: 35vh; }
+      height: 35vh;
+      max-height: 230px; }
     @media screen and (min-width: 962px) {
       .images img {
         height: 42vh;
         -webkit-transition-delay: 0s;
                 transition-delay: 0s; }
         .images img.active {
-          height: 56vh; } }
+          height: 56vh;
+          max-height: 100%; } }
 
 .c-tags {
   margin-bottom: .9rem;
