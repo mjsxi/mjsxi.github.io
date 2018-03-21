@@ -4,7 +4,7 @@ date: 2017-06-01 21:45:00 Z
 layout: page
 ---
 
-Hi, I'm Matt. I'm a ux/product designer who's be working in the digital medium since 2010.
+Hi, I'm Matt. I'm a ux/product designer who's been working in the digital medium since 2010.
 
 Currently, I work on product design for internal tools @ [vox media](http://www.voxmedia.com/). When I'm not at work or thinking about bad dark web patterns I enjoy baking and lounging around my apartment with my cat.
 
