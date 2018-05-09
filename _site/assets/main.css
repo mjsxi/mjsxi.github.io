@@ -701,7 +701,9 @@ h2 {
   margin-bottom: 2.5rem; }
   .c-post--list {
     margin-top: 2.5rem;
-    margin-bottom: 2.5rem; }
+    padding-bottom: 2.5rem; }
+    .c-post--list:nth-child(odd) {
+      background: #F5F1E8; }
     .c-post--list a {
       text-decoration: underline; }
     .c-post--list p {
