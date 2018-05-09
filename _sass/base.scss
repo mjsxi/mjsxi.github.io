@@ -128,18 +128,12 @@ h2 {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ISO Mono';
+  src: url('./fonts/ISO.woff') format('woff');
+  font-style: normal;
+}
+
 %wrapper {
   max-width: $content-width;
 }
-
-
-
-
-
-
-
-
-
-
-
-

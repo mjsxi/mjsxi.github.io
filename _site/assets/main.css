@@ -410,7 +410,7 @@ template {
 
 body {
   font-family: "ISO Mono", monospace;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.65rem;
   color: #949494;
@@ -420,7 +420,7 @@ body {
   overflow-x: hidden; }
   @media screen and (min-width: 962px) {
     body {
-      font-size: 1.05rem;
+      font-size: 1rem;
       line-height: 1.75; } }
 
 img,
@@ -470,7 +470,7 @@ table {
 
 h1, h2, h3,
 h4, h5, h6 {
-  font-family: "Sofia Pro", sans-serif;
+  font-family: "Sofia Pro", serif;
   color: #4f4f4f;
   font-weight: normal;
   margin-bottom: 0rem;
@@ -478,11 +478,15 @@ h4, h5, h6 {
   margin-top: 10px; }
 
 h2 {
-  font-size: 38px; }
+  font-size: 42px; }
 
 @font-face {
   font-family: 'Sofia Pro';
   src: url("./fonts/sofia_pro_black.woff") format("woff");
+  font-style: normal; }
+@font-face {
+  font-family: 'ISO Mono';
+  src: url("./fonts/ISO.woff") format("woff");
   font-style: normal; }
 @font-face {
   font-family: 'ISO Mono';
@@ -591,7 +595,7 @@ h2 {
       .c-header .header-container {
         margin: 0; } }
   .c-header .header-title {
-    font-family: "Sofia Pro", sans-serif;
+    font-family: "Sofia Pro", serif;
     color: #4f4f4f;
     font-size: 18px; }
     .c-header .header-title a {
@@ -767,6 +771,10 @@ h2 {
           max-height: 100%; } }
 
 .c-tags {
+  font-family: "ISO Mono", monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
   margin-bottom: .9rem;
   padding-left: 0; }
   .c-tags li {
