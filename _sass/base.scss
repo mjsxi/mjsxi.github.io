@@ -22,7 +22,7 @@
 
 body {
   font-family: $base-font-family;
-  font-size: ($base-font-size - .05rem);
+  font-size: $base-font-size - .05rem;
   font-weight: $base-font-weight;
   line-height: $base-line-height - .1rem;
   color: $text-color;
@@ -113,7 +113,11 @@ h4,h5,h6 {
 }
 
 h2 {
-  font-size: $heading-font-size;
+  font-size: $heading-font-size - 12px;
+  @include media-query {
+    font-size: $heading-font-size;
+    line-height: $heading-line-height;
+  }
 }
 
 @font-face {
@@ -123,16 +127,16 @@ h2 {
 }
 
 @font-face {
-  font-family: 'ISO Mono';
-  src: url('./fonts/ISO.woff') format('woff');
+  font-family: 'Apercu Mono';
+  src: url('./fonts/apercu-mono.woff') format('woff');
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'ISO Mono';
-  src: url('./fonts/ISO.woff') format('woff');
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'Apercu Mono';
+//   src: url('./fonts/apercu-mono.woff') format('woff');
+//   font-style: normal;
+// }
 
 %wrapper {
   max-width: $content-width;

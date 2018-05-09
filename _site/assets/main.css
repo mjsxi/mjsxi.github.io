@@ -409,11 +409,11 @@ template {
   background-color: #FFFCF6; }
 
 body {
-  font-family: "ISO Mono", monospace;
+  font-family: "Apercu Mono", monospace;
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.65rem;
-  color: #949494;
+  color: #848484;
   background: #FFFCF6;
   position: relative;
   min-height: 100vh;
@@ -478,19 +478,19 @@ h4, h5, h6 {
   margin-top: 10px; }
 
 h2 {
-  font-size: 42px; }
+  font-size: 52px; }
+  @media screen and (min-width: 962px) {
+    h2 {
+      font-size: 64px;
+      line-height: 1.35; } }
 
 @font-face {
   font-family: 'Sofia Pro';
   src: url("./fonts/sofia_pro_black.woff") format("woff");
   font-style: normal; }
 @font-face {
-  font-family: 'ISO Mono';
-  src: url("./fonts/ISO.woff") format("woff");
-  font-style: normal; }
-@font-face {
-  font-family: 'ISO Mono';
-  src: url("./fonts/ISO.woff") format("woff");
+  font-family: 'Apercu Mono';
+  src: url("./fonts/apercu-mono.woff") format("woff");
   font-style: normal; }
 .c-header .header-container, .c-footer .footer-container, .c-post--content {
   max-width: 930px; }
@@ -500,13 +500,13 @@ h2 {
   .c-nav a {
     cursor: pointer; }
   .c-nav .nav-items {
-    color: #949494;
+    color: #848484;
     margin-left: 0.75rem; }
   .c-nav .nav--active {
     color: #69CDED; }
 
 .projects .nav-items {
-  color: #949494; }
+  color: #848484; }
   .projects .nav-items:hover {
     color: #E381EB; }
   .projects .nav-items.active {
@@ -618,7 +618,7 @@ h2 {
     .c-header .header-nav-button .middle,
     .c-header .header-nav-button .bottom {
       height: 2px;
-      background: #949494;
+      background: #848484;
       border-radius: 5px;
       -webkit-transition: width 0.25s;
       transition: width 0.25s; }
@@ -771,7 +771,7 @@ h2 {
           max-height: 100%; } }
 
 .c-tags {
-  font-family: "ISO Mono", monospace;
+  font-family: "Apercu Mono", monospace;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
@@ -779,12 +779,15 @@ h2 {
   padding-left: 0; }
   .c-tags li {
     display: inline-block;
-    background: #949494;
+    background: #848484;
     color: #ffffff;
     font-size: 12px;
-    padding: 3px 8px;
+    padding: 3px 8px 2px;
     margin-bottom: 10px;
     margin-right: -.35rem; }
+    @media screen and (min-width: 962px) {
+      .c-tags li {
+        padding: 3px 8px; } }
     .c-tags li p {
       margin-bottom: 0;
       margin-top: 0; }

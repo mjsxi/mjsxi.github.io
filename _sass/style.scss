@@ -3,23 +3,24 @@
 // Defaults variables
 
 $heading-font-family: 'Sofia Pro', serif !default;
-$heading-font-size:    42px !default;
+$heading-font-size:    64px !default;
 $heading-font-weight:  900 !default;
+$heading-line-height:  1.35 !default;
 
-$base-font-family:    'ISO Mono', monospace !default;
-$base-font-size:      1rem !default;
-$base-font-weight:    400 !default;
-$base-line-height:    1.75 !default;
+$base-font-family:     'Apercu Mono', monospace !default;
+$base-font-size:       1rem !default;
+$base-font-weight:     400 !default;
+$base-line-height:     1.75 !default;
 
-$accent-font-family:    'ISO Mono', monospace !default;
-$accent-font-size:      1rem !default;
-$accent-font-weight:    400 !default;
-$accent-line-height:    1.75 !default;
+$accent-font-family:   'Apercu Mono', monospace !default;
+$accent-font-size:     1rem !default;
+$accent-font-weight:   400 !default;
+$accent-line-height:   1.75 !default;
 
 $link-color:          #69CDED !default;
 $link-hover-color:    #E381EB !default;
 
-$text-color:          #949494 !default;
+$text-color:          #848484 !default;
 $text-color-dark:     #4f4f4f !default;
 
 $background-color:    #FFFCF6 !default;
