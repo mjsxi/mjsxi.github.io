@@ -12,26 +12,25 @@ images:
 layout: page
 ---
 
-I worked on a small team to help redesign our analytics platform. My duties included establishing a modular design system of patterns to help tell the story of a brand partner's performance through data.
+In late 2016 we spun up a new team to rethink a tool used by our ad operations team called insights — it’s our analytics platform that we use to track performance with brand partners.
 
-One of the main challenges of the project was to establish design patterns that would work across all types of campaigns, while pulling out the most relevant pieces of the data story. We used a blend of data visualization and natural language summaries to achive this goal.
+I focused on helping build out the modular based design system and helped us develop patterns to be used in this and other apps we had planned. One of the main challenges was determining what things were worth pulling out as significant and making the system more approachable by using natural language summaries.
 
 <!--more-->
 
-<figure>
-  <img src="../uploads/insights-early.jpg">
-</figure>
+### High Level Goals
+- Rebuild UI/UX using a design system
+- Make parsing information easier
+- Build things that can be reused in other projects
 
-An early iteration of Insights which included graphs and other data visualizations to help with digesting numbers and other data points.
+### A bit of Insight
+Insights started off in 2015 as a quick and dirty middleman app that quickly outgrew its humble beginnings and turned into a widely used tool. As a result, the team behind it wanted a proper design sprint to build up the app. One of the goals for this project was to build a design system to be utilized by the engineers on the team when it came to feature requests without the need for a designer.
 
-<figure>
-  <img src="../uploads/insights-early-v2.jpg">
-</figure>
+This was successful and was spun off into the insights pattern library which was used to put together a few other apps and allowed the design resources to focus on refinement within the system rather than getting swept up in a bespoke designs based on the apps.
 
-A sketched iteration on how to give users a peak into what types of data is included in a campaign — our goal was to try and make things easily glanceable.
+### Meaningful Tweak
+The color pallette -- it seems like a small thing to change but we went from very strong yellows, browns, and reds to more cooler blues and purples to make it less of a harsh feeling experience to use the app and it went over very well with users.
 
-<figure>
-  <img src="../uploads/insights-early-v3.jpg">
-</figure>
-
-An later mock of a campaign page, which eventually shaped a good portion of the visual design of Insights.
+### Lessons Learned
+- Not all information needs to be visualized in a chart or graph; sometimes the most effective way to convey information is to use a few words to describe it.
+- Pattern libraries are harder to make than I realized, even for relatively small projects with a focused scope.

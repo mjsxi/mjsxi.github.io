@@ -6,6 +6,7 @@ $( function() {
   var tops = [
     $('[data-section="about"]').position().top,
     $('[data-section="hymnal"]').position().top,
+    $('[data-section="resonance"]').position().top,
     $('[data-section="insights"]').position().top,
     $('[data-section="vox"]').position().top,
     
@@ -40,6 +41,7 @@ $( function() {
     tops = [
     $('[data-section="about"]').position().top,
     $('[data-section="hymnal"]').position().top,
+    $('[data-section="resonance"]').position().top,
     $('[data-section="insights"]').position().top,
     $('[data-section="vox"]').position().top,
     

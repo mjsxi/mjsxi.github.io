@@ -1,67 +1,115 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-14T21:57:13+00:00</updated><id>http://localhost:4000/</id><title type="html">matt sullivan</title><subtitle>I am a ux/product designer with a background in human centered design. designs with data &amp; user research most of the time, intuition &amp; experience the rest of the time. </subtitle><entry><title type="html">vox</title><link href="http://localhost:4000/projects/vox.html" rel="alternate" type="text/html" title="vox" /><published>2017-06-05T21:45:00+00:00</published><updated>2017-06-05T21:45:00+00:00</updated><id>http://localhost:4000/projects/vox</id><content type="html" xml:base="http://localhost:4000/projects/vox.html">&lt;p&gt;Being a part of the original Voxdotcom design team was extremely rewarding and hectic — over the course of a few months the team went from mocks to prototypes to a full production buildout and live. During this project I was involved primarily with refining the homepage and interacting with both the design and code to focus on clarity of information, good design, and clean code.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-15T21:14:39+00:00</updated><id>http://localhost:4000/</id><title type="html">matt sullivan</title><subtitle>I am a ux/product designer with a background in human centered design. designs with data &amp; user research most of the time, intuition &amp; experience the rest of the time. </subtitle><entry><title type="html">vox</title><link href="http://localhost:4000/projects/vox.html" rel="alternate" type="text/html" title="vox" /><published>2017-06-05T21:45:00+00:00</published><updated>2017-06-05T21:45:00+00:00</updated><id>http://localhost:4000/projects/vox</id><content type="html" xml:base="http://localhost:4000/projects/vox.html">&lt;p&gt;In early 2013 vox media partnered with Ezra Klein and Melissa Bell to help build the future of news. This was one of my first projects I worked on at vox media and was one of the most rewarding and hectic experiences I’ve had here. It was a super fast 6 week project from start to finish that was built off the base of another one of vox media’s networks to give this a jump start (this also launched discussions of a platform unification called unison). During the project, I was primarily involved with the homepage and things that would engage the users to “eat their vegetables” (in Ezra’s words), where we would encourage rabbit holing information so people would consume less exciting topics to get context for bigger stories.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
-&lt;p&gt;While my main focus was on the homepage redesign and various problem sloving involved with it I also touched a bunch of smaller things like storystreams and various interactions across the site.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.vox.com&quot; title=&quot;Visit Voxdotcoms Homepage&quot;&gt;vox.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../uploads/vox-early-homepage-1.png&quot; /&gt;
-&lt;/figure&gt;
-&lt;p&gt;&lt;cite&gt;An early homepaage exploration&lt;/cite&gt;&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../uploads/vox-early-homepage-2.png&quot; /&gt;
-&lt;/figure&gt;
-&lt;p&gt;&lt;cite&gt;An early homepaage exploration&lt;/cite&gt;&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../uploads/vox-early-homepage-3.png&quot; /&gt;
-&lt;/figure&gt;
-&lt;p&gt;&lt;cite&gt;An early homepaage exploration&lt;/cite&gt;&lt;/p&gt;</content><author><name></name></author><category term="visual design" /><category term="early product exploration" /><summary type="html">Being a part of the original Voxdotcom design team was extremely rewarding and hectic — over the course of a few months the team went from mocks to prototypes to a full production buildout and live. During this project I was involved primarily with refining the homepage and interacting with both the design and code to focus on clarity of information, good design, and clean code.</summary></entry><entry><title type="html">insights</title><link href="http://localhost:4000/projects/insights.html" rel="alternate" type="text/html" title="insights" /><published>2017-06-04T21:45:00+00:00</published><updated>2017-06-04T21:45:00+00:00</updated><id>http://localhost:4000/projects/insights</id><content type="html" xml:base="http://localhost:4000/projects/insights.html">&lt;p&gt;I worked on a small team to help redesign our analytics platform. My duties included establishing a modular design system of patterns to help tell the story of a brand partner’s performance through data.&lt;/p&gt;
-
-&lt;p&gt;One of the main challenges of the project was to establish design patterns that would work across all types of campaigns, while pulling out the most relevant pieces of the data story. We used a blend of data visualization and natural language summaries to achive this goal.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../uploads/insights-early.jpg&quot; /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;An early iteration of Insights which included graphs and other data visualizations to help with digesting numbers and other data points.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../uploads/insights-early-v2.jpg&quot; /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;A sketched iteration on how to give users a peak into what types of data is included in a campaign — our goal was to try and make things easily glanceable.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;../uploads/insights-early-v3.jpg&quot; /&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;An later mock of a campaign page, which eventually shaped a good portion of the visual design of Insights.&lt;/p&gt;</content><author><name></name></author><category term="user research" /><category term="ux/visual design" /><summary type="html">I worked on a small team to help redesign our analytics platform. My duties included establishing a modular design system of patterns to help tell the story of a brand partner’s performance through data. One of the main challenges of the project was to establish design patterns that would work across all types of campaigns, while pulling out the most relevant pieces of the data story. We used a blend of data visualization and natural language summaries to achive this goal.</summary></entry><entry><title type="html">hymnal</title><link href="http://localhost:4000/projects/hymnal.html" rel="alternate" type="text/html" title="hymnal" /><published>2017-06-02T21:45:00+00:00</published><updated>2017-06-02T21:45:00+00:00</updated><id>http://localhost:4000/projects/hymnal</id><content type="html" xml:base="http://localhost:4000/projects/hymnal.html">&lt;p&gt;Hymnal is Vox Media’s internal ad platform, this project — which was instrumental in rethinking how ad were built for scale over all premium ads run on Vox Media websites onto one platform, built on a single codebase and shared design system. The project took two years to complete and involved more than 350 websites across our eight editorial brands.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;h3 id=&quot;testing-out-this&quot;&gt;testing out this&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;one&lt;/li&gt;
-  &lt;li&gt;two&lt;/li&gt;
-  &lt;li&gt;three&lt;/li&gt;
-&lt;/ol&gt;
-
+&lt;h3 id=&quot;high-level-goals&quot;&gt;High Level Goals&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;one&lt;/li&gt;
-  &lt;li&gt;two&lt;/li&gt;
-  &lt;li&gt;three&lt;/li&gt;
+  &lt;li&gt;What does the future of news look like&lt;/li&gt;
+  &lt;li&gt;How to engage users to read additional context in addition to breaking news&lt;/li&gt;
+  &lt;li&gt;What can we do differently as a web publication&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;For the better part of last year, I worked on the product design and development of Vox Media’s proprietary custom display and native ad unit publishing platform, Hymnal.&lt;/p&gt;
+&lt;h3 id=&quot;six-weeks-to-launch&quot;&gt;Six weeks to launch&lt;/h3&gt;
+&lt;p&gt;The project kicked off rapidly and was heavily based off of another network vox media owned (sb nation) this let us iterate fast and put laser focus into things we cared about exploring since it lowered the barrier engineering wise and freed people up to work on features we wanted to implement that were not apart of the core sb nation codebase.&lt;/p&gt;
 
-&lt;p&gt;I worked on a small but mighty team on creating the best user experience possible on a platform that’s a workhorse for the company’s bottom line. I’ve had the pleasure of conducting several product design sprints with the team, guiding/contributing to everything from wireframes to sketching to prototyping to ultimately testing the platform on users.&lt;/p&gt;</content><author><name></name></author><category term="user research" /><category term="ux/visual design" /><summary type="html">Hymnal is Vox Media’s internal ad platform, this project — which was instrumental in rethinking how ad were built for scale over all premium ads run on Vox Media websites onto one platform, built on a single codebase and shared design system. The project took two years to complete and involved more than 350 websites across our eight editorial brands.</summary></entry><entry><title type="html">about</title><link href="http://localhost:4000/projects/about.html" rel="alternate" type="text/html" title="about" /><published>2017-06-01T21:45:00+00:00</published><updated>2017-06-01T21:45:00+00:00</updated><id>http://localhost:4000/projects/about</id><content type="html" xml:base="http://localhost:4000/projects/about.html">&lt;p&gt;hi, i’m matt. i’m a ux/product designer who’s been working in the digital medium since 2010.&lt;/p&gt;
+&lt;p&gt;We took this and focused our work around the homepage and easy findability of topics along with something called explainers, which were card based information bundles that were tagged and linked into articles so people could deep dive into digestible facts about topics for additional context and information.&lt;/p&gt;
+
+&lt;p&gt;Due to all the affordances of being smart about resources we quickly launched voxdotcom as an experiment with iteration in mind and vox has exploded to be one of our top performing networks.&lt;/p&gt;
+
+&lt;h3 id=&quot;fun-fact&quot;&gt;Fun Fact&lt;/h3&gt;
+&lt;p&gt;The colors for voxdotcom were derived from an untitled Rothko painting consisting of greys, blues and yellows.&lt;/p&gt;
+
+&lt;h3 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Working fast and letting assumptions be wrong is a very fun way to see what the audience likes and doesn’t like&lt;/li&gt;
+  &lt;li&gt;Learning what to and what not to stress over due to a highly compressed timeline.&lt;/li&gt;
+  &lt;li&gt;How to build on existing work in order to iterate and build something stronger and the inherent weaknesses and strengths in not beginning at the start line on a project.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="visual design" /><category term="early product exploration" /><summary type="html">In early 2013 vox media partnered with Ezra Klein and Melissa Bell to help build the future of news. This was one of my first projects I worked on at vox media and was one of the most rewarding and hectic experiences I’ve had here. It was a super fast 6 week project from start to finish that was built off the base of another one of vox media’s networks to give this a jump start (this also launched discussions of a platform unification called unison). During the project, I was primarily involved with the homepage and things that would engage the users to “eat their vegetables” (in Ezra’s words), where we would encourage rabbit holing information so people would consume less exciting topics to get context for bigger stories.</summary></entry><entry><title type="html">insights</title><link href="http://localhost:4000/projects/insights.html" rel="alternate" type="text/html" title="insights" /><published>2017-06-04T21:45:00+00:00</published><updated>2017-06-04T21:45:00+00:00</updated><id>http://localhost:4000/projects/insights</id><content type="html" xml:base="http://localhost:4000/projects/insights.html">&lt;p&gt;In late 2016 we spun up a new team to rethink a tool used by our ad operations team called insights — it’s our analytics platform that we use to track performance with brand partners.&lt;/p&gt;
+
+&lt;p&gt;I focused on helping build out the modular based design system and helped us develop patterns to be used in this and other apps we had planned. One of the main challenges was determining what things were worth pulling out as significant and making the system more approachable by using natural language summaries.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3 id=&quot;high-level-goals&quot;&gt;High Level Goals&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Rebuild UI/UX using a design system&lt;/li&gt;
+  &lt;li&gt;Make parsing information easier&lt;/li&gt;
+  &lt;li&gt;Build things that can be reused in other projects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;a-bit-of-insight&quot;&gt;A bit of Insight&lt;/h3&gt;
+&lt;p&gt;Insights started off in 2015 as a quick and dirty middleman app that quickly outgrew its humble beginnings and turned into a widely used tool. As a result, the team behind it wanted a proper design sprint to build up the app. One of the goals for this project was to build a design system to be utilized by the engineers on the team when it came to feature requests without the need for a designer.&lt;/p&gt;
+
+&lt;p&gt;This was successful and was spun off into the insights pattern library which was used to put together a few other apps and allowed the design resources to focus on refinement within the system rather than getting swept up in a bespoke designs based on the apps.&lt;/p&gt;
+
+&lt;h3 id=&quot;meaningful-tweak&quot;&gt;Meaningful Tweak&lt;/h3&gt;
+&lt;p&gt;The color pallette – it seems like a small thing to change but we went from very strong yellows, browns, and reds to more cooler blues and purples to make it less of a harsh feeling experience to use the app and it went over very well with users.&lt;/p&gt;
+
+&lt;h3 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Not all information needs to be visualized in a chart or graph; sometimes the most effective way to convey information is to use a few words to describe it.&lt;/li&gt;
+  &lt;li&gt;Pattern libraries are harder to make than I realized, even for relatively small projects with a focused scope.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="user research" /><category term="ux/visual design" /><summary type="html">In late 2016 we spun up a new team to rethink a tool used by our ad operations team called insights — it’s our analytics platform that we use to track performance with brand partners. I focused on helping build out the modular based design system and helped us develop patterns to be used in this and other apps we had planned. One of the main challenges was determining what things were worth pulling out as significant and making the system more approachable by using natural language summaries.</summary></entry><entry><title type="html">resonance</title><link href="http://localhost:4000/projects/concert.html" rel="alternate" type="text/html" title="resonance" /><published>2017-06-03T21:45:00+00:00</published><updated>2017-06-03T21:45:00+00:00</updated><id>http://localhost:4000/projects/concert</id><content type="html" xml:base="http://localhost:4000/projects/concert.html">&lt;p&gt;In early 2018 I was asked to assist in reworking the design system used at vox media to make it more sustainable and scalable as vox’s needs for it grow. I was brought in to help clean and organize the system along with giving input and helping revise workflow so that the tool can used by future product designers to quickly devise and iterate on upcoming platforms.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3 id=&quot;high-level-goals&quot;&gt;High Level Goals&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Help rebuild our internal design system&lt;/li&gt;
+  &lt;li&gt;Make iteration and scalable more sustainable&lt;/li&gt;
+  &lt;li&gt;Educate designers on how to implement and use this system&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;more-about-the-system&quot;&gt;More about the system&lt;/h3&gt;
+&lt;p&gt;The system, resonance is still in early days in terms of use but it has lofty goals – the old team was used to working with sketch but had not set up a systems based symbols library and, as such, when changes to new mocks were done by hand as opposed to using the system that had been constructed.&lt;/p&gt;
+
+&lt;p&gt;With the update to the system, less things needed to be detached and maintained as there was one or two reference design in which each each style was derived from leading to changes being able to be made in a sweeping way if someone wanted to change something as simple as a color. This let us bring our internal design system to the forefront and allows us the ability to grow the system and keep design files maintained.&lt;/p&gt;
+
+&lt;h3 id=&quot;future-improvements&quot;&gt;Future Improvements&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Not all aspects where touched in this reworking due to time contains on my end and I’d love to revisit parts of it to further abstract out the design patterns&lt;/li&gt;
+  &lt;li&gt;Put together more documentation and tutorial videos on how to use the system to its greatest extent&lt;/li&gt;
+  &lt;li&gt;Simplify the system as some redundancies exist within the system.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="systems design" /><category term="system rearchiture" /><summary type="html">In early 2018 I was asked to assist in reworking the design system used at vox media to make it more sustainable and scalable as vox’s needs for it grow. I was brought in to help clean and organize the system along with giving input and helping revise workflow so that the tool can used by future product designers to quickly devise and iterate on upcoming platforms.</summary></entry><entry><title type="html">hymnal</title><link href="http://localhost:4000/projects/hymnal.html" rel="alternate" type="text/html" title="hymnal" /><published>2017-06-02T21:45:00+00:00</published><updated>2017-06-02T21:45:00+00:00</updated><id>http://localhost:4000/projects/hymnal</id><content type="html" xml:base="http://localhost:4000/projects/hymnal.html">&lt;p&gt;In 2017 the revenue product team set out to evaluate our internal tools and found one of the main product offerings had grown stale as a product and user flows were being affected negatively by it. The tool, which runs all of vox media’s premium ads across multiple networks, had not grown with new and bigger demands and needed some rethinking to get things done in a more efficient and easier way.&lt;/p&gt;
+
+&lt;p&gt;The hope was to make creating and building ads much easier along with reducing the user friction at certain pain points in the creation by rethinking and modernizing the tool.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3 id=&quot;high-level-goals&quot;&gt;high level goals&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;reduce User Friction within the app&lt;/li&gt;
+  &lt;li&gt;refresh User flow and rethink how new ads are built&lt;/li&gt;
+  &lt;li&gt;reduce Build times to decrease per ad cost&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;jumping-off-point&quot;&gt;jumping off point&lt;/h3&gt;
+&lt;p&gt;hymnal was brought into the world in 2014 and was a quick experiment by a few engineers as a proof of concept built using rails and bootstrap 2 without any design input (lolsob). Fast forward a few years and it was supporting nearly one hundred users and millions of dollars and grew to be one of vox media’s main lines of business. Due to user frustration hymnal was slated for a massive overhaul with a design lead rework.&lt;/p&gt;
+
+&lt;h3 id=&quot;initial-findings-and-resolutions&quot;&gt;initial findings and resolutions&lt;/h3&gt;
+&lt;p&gt;this project initially began as a simple refresh but once the team and I started talking to the users it soon came to light that the very nature of how we build ads was the biggest pain point — from uploading assets to managing them, it was all a mess. We started by asking a small sample of users to go through their workflow and noticed many of them weren’t aware of what they could edit within any given ad or how to manage assets — a design failure of the tool, as this information wasn’t being surfaced to them.&lt;/p&gt;
+
+&lt;p&gt;this led us to a tricky solve to display what things could be added/manipulated within an ad but not clutter things as to make it distracting.&lt;/p&gt;
+
+&lt;p&gt;we resolved this by reworking the tool to use a navigation system derived from a computer file system and popular code editors — this made it easy for users to see what options were available and leaned into things they were currently using along with letting us organize the information presented to users so they could easily and efficiently work through creating an ad on our platform.&lt;/p&gt;
+
+&lt;h3 id=&quot;favorite-change&quot;&gt;favorite change&lt;/h3&gt;
+&lt;p&gt;with the updated user flow and work process we were able to reduce the time it takes to create ads by about half; the most dramatic was an ad that had taken about 4 hours to make was cut down to about 1.5 hours.&lt;/p&gt;
+
+&lt;h3 id=&quot;lessons-learned&quot;&gt;lessons learned&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;people have a hard time articulating issues with interfaces they’ve grown accustomed to using so proper context is needed to fish for what is bothering users.&lt;/li&gt;
+  &lt;li&gt;be ready for ideas to fail, assumptions are only as good as their testing and while you have ideas you think will have legs, some user testing will tell you otherwise&lt;/li&gt;
+  &lt;li&gt;failure is a great tool in learning and is often how I came to some of my best ideas&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;future-improvements&quot;&gt;future improvements&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;this redesign focused mostly on the creation and edit process and other parts of the app have not been addressed such as information organization, traversale within the system and other critical path issues within the experience.&lt;/li&gt;
+  &lt;li&gt;looking into what this would be like on mobile — even as just a read only or cut down feature set since it doesn’t need parity with the desktop version&lt;/li&gt;
+  &lt;li&gt;further ui/user flow improvements to help speed things up further&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="user research" /><category term="ux/visual design" /><summary type="html">In 2017 the revenue product team set out to evaluate our internal tools and found one of the main product offerings had grown stale as a product and user flows were being affected negatively by it. The tool, which runs all of vox media’s premium ads across multiple networks, had not grown with new and bigger demands and needed some rethinking to get things done in a more efficient and easier way. The hope was to make creating and building ads much easier along with reducing the user friction at certain pain points in the creation by rethinking and modernizing the tool.</summary></entry><entry><title type="html">about</title><link href="http://localhost:4000/projects/about.html" rel="alternate" type="text/html" title="about" /><published>2017-06-01T21:45:00+00:00</published><updated>2017-06-01T21:45:00+00:00</updated><id>http://localhost:4000/projects/about</id><content type="html" xml:base="http://localhost:4000/projects/about.html">&lt;p&gt;hi, i’m matt. i’m a ux/product designer who’s been working in the digital medium since 2010.&lt;/p&gt;
 
 &lt;p&gt;currently, I’m doing product design for internal tools @ &lt;a href=&quot;http://www.voxmedia.com/&quot;&gt;vox media&lt;/a&gt;. when I’m not thinking about bad dark patterns or modular design elements i enjoy baking and lounging around with my cat, χ.&lt;/p&gt;
 
-&lt;p&gt;any questions please &lt;a href=&quot;mailto:msullivanxi@gmail.com?Subject=Hi%20Matt&quot;&gt;reach out&lt;/a&gt; otherwise enjoy the limited selection of work below.&lt;/p&gt;</content><author><name></name></author><summary type="html">hi, i’m matt. i’m a ux/product designer who’s been working in the digital medium since 2010. currently, I’m doing product design for internal tools @ vox media. when I’m not thinking about bad dark patterns or modular design elements i enjoy baking and lounging around with my cat, χ. any questions please reach out otherwise enjoy the limited selection of work below.</summary></entry></feed>
+&lt;p&gt;any questions please &lt;a href=&quot;mailto:msullivanxi@gmail.com?Subject=Hi%20Matt&quot;&gt;reach out&lt;/a&gt; otherwise enjoy the selection of work below.&lt;/p&gt;</content><author><name></name></author><summary type="html">hi, i’m matt. i’m a ux/product designer who’s been working in the digital medium since 2010. currently, I’m doing product design for internal tools @ vox media. when I’m not thinking about bad dark patterns or modular design elements i enjoy baking and lounging around with my cat, χ. any questions please reach out otherwise enjoy the selection of work below.</summary></entry></feed>

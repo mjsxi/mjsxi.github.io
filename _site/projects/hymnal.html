@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>matt sullivan | hymnal</title>
-  <meta name="description" content="Hymnal is Vox Media’s internal ad platform, this project — which was instrumental in rethinking how ad were built for scale over all premium ads run on Vox M...">
+  <meta name="description" content="In 2017 the revenue product team set out to evaluate our internal tools and found one of the main product offerings had grown stale as a product and user flo...">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="http://localhost:4000/projects/hymnal.html">
@@ -43,6 +43,10 @@
       
         
           <a class="nav-items active" href="/projects/hymnal.html">hymnal</a>
+        
+      
+        
+          <a class="nav-items" href="/projects/concert.html">resonance</a>
         
       
         
@@ -109,26 +113,45 @@
     
 
 
-    <p>Hymnal is Vox Media’s internal ad platform, this project — which was instrumental in rethinking how ad were built for scale over all premium ads run on Vox Media websites onto one platform, built on a single codebase and shared design system. The project took two years to complete and involved more than 350 websites across our eight editorial brands.</p>
+    <p>In 2017 the revenue product team set out to evaluate our internal tools and found one of the main product offerings had grown stale as a product and user flows were being affected negatively by it. The tool, which runs all of vox media’s premium ads across multiple networks, had not grown with new and bigger demands and needed some rethinking to get things done in a more efficient and easier way.</p>
+
+<p>The hope was to make creating and building ads much easier along with reducing the user friction at certain pain points in the creation by rethinking and modernizing the tool.</p>
 
 <!--more-->
 
-<h3 id="testing-out-this">testing out this</h3>
-<ol>
-  <li>one</li>
-  <li>two</li>
-  <li>three</li>
-</ol>
-
+<h3 id="high-level-goals">high level goals</h3>
 <ul>
-  <li>one</li>
-  <li>two</li>
-  <li>three</li>
+  <li>reduce User Friction within the app</li>
+  <li>refresh User flow and rethink how new ads are built</li>
+  <li>reduce Build times to decrease per ad cost</li>
 </ul>
 
-<p>For the better part of last year, I worked on the product design and development of Vox Media’s proprietary custom display and native ad unit publishing platform, Hymnal.</p>
+<h3 id="jumping-off-point">jumping off point</h3>
+<p>hymnal was brought into the world in 2014 and was a quick experiment by a few engineers as a proof of concept built using rails and bootstrap 2 without any design input (lolsob). Fast forward a few years and it was supporting nearly one hundred users and millions of dollars and grew to be one of vox media’s main lines of business. Due to user frustration hymnal was slated for a massive overhaul with a design lead rework.</p>
 
-<p>I worked on a small but mighty team on creating the best user experience possible on a platform that’s a workhorse for the company’s bottom line. I’ve had the pleasure of conducting several product design sprints with the team, guiding/contributing to everything from wireframes to sketching to prototyping to ultimately testing the platform on users.</p>
+<h3 id="initial-findings-and-resolutions">initial findings and resolutions</h3>
+<p>this project initially began as a simple refresh but once the team and I started talking to the users it soon came to light that the very nature of how we build ads was the biggest pain point — from uploading assets to managing them, it was all a mess. We started by asking a small sample of users to go through their workflow and noticed many of them weren’t aware of what they could edit within any given ad or how to manage assets — a design failure of the tool, as this information wasn’t being surfaced to them.</p>
+
+<p>this led us to a tricky solve to display what things could be added/manipulated within an ad but not clutter things as to make it distracting.</p>
+
+<p>we resolved this by reworking the tool to use a navigation system derived from a computer file system and popular code editors — this made it easy for users to see what options were available and leaned into things they were currently using along with letting us organize the information presented to users so they could easily and efficiently work through creating an ad on our platform.</p>
+
+<h3 id="favorite-change">favorite change</h3>
+<p>with the updated user flow and work process we were able to reduce the time it takes to create ads by about half; the most dramatic was an ad that had taken about 4 hours to make was cut down to about 1.5 hours.</p>
+
+<h3 id="lessons-learned">lessons learned</h3>
+<ul>
+  <li>people have a hard time articulating issues with interfaces they’ve grown accustomed to using so proper context is needed to fish for what is bothering users.</li>
+  <li>be ready for ideas to fail, assumptions are only as good as their testing and while you have ideas you think will have legs, some user testing will tell you otherwise</li>
+  <li>failure is a great tool in learning and is often how I came to some of my best ideas</li>
+</ul>
+
+<h3 id="future-improvements">future improvements</h3>
+<ul>
+  <li>this redesign focused mostly on the creation and edit process and other parts of the app have not been addressed such as information organization, traversale within the system and other critical path issues within the experience.</li>
+  <li>looking into what this would be like on mobile — even as just a read only or cut down feature set since it doesn’t need parity with the desktop version</li>
+  <li>further ui/user flow improvements to help speed things up further</li>
+</ul>
 
 
     <div class="c-nav--bottom">
@@ -136,7 +159,7 @@
     <a class="prev" href="/projects/vox.html">&laquo; vox</a>
     
   
-    <a class="next" href="/projects/insights.html">insights &raquo;</a>
+    <a class="next" href="/projects/concert.html">resonance &raquo;</a>
     
 </div>
   </div>

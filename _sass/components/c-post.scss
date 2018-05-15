@@ -14,8 +14,15 @@
       text-decoration: underline;
     }
 
-    p {
+    p,
+    ul {
       max-width: 550px;
+    }
+
+    ul {
+      li {
+        margin-bottom: .75rem;
+      }
     }
   }
 

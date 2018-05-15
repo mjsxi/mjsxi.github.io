@@ -1,22 +1,32 @@
 ---
-title: concert
+title: resonance
 date: 2017-06-03 21:45:00 Z
 tags:
-- user reasearch
-- ux/visual design
-alt-title: concert portfolio
+- systems design
+- system rearchiture
+alt-title: resonance ui kit
 images:
 - concert-home-page-mobile.png
 - concert-home-page.png
 - concert-product-page.png
-published: false
 layout: page
 ---
 
-Coming Soon!
+In early 2018 I was asked to assist in reworking the design system used at vox media to make it more sustainable and scalable as vox’s needs for it grow. I was brought in to help clean and organize the system along with giving input and helping revise workflow so that the tool can used by future product designers to quickly devise and iterate on upcoming platforms.
 
 <!--more-->
 
-<div class="c-mosaic">
+### High Level Goals
+- Help rebuild our internal design system
+- Make iteration and scalable more sustainable
+- Educate designers on how to implement and use this system
 
-</div>
+### More about the system
+The system, resonance is still in early days in terms of use but it has lofty goals -- the old team was used to working with sketch but had not set up a systems based symbols library and, as such, when changes to new mocks were done by hand as opposed to using the system that had been constructed.
+
+With the update to the system, less things needed to be detached and maintained as there was one or two reference design in which each each style was derived from leading to changes being able to be made in a sweeping way if someone wanted to change something as simple as a color. This let us bring our internal design system to the forefront and allows us the ability to grow the system and keep design files maintained.
+
+### Future Improvements
+- Not all aspects where touched in this reworking due to time contains on my end and I’d love to revisit parts of it to further abstract out the design patterns
+- Put together more documentation and tutorial videos on how to use the system to its greatest extent
+- Simplify the system as some redundancies exist within the system.

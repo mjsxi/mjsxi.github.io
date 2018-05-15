@@ -395,7 +395,8 @@ template {
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  text-transform: lowercase; }
 
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-button,
@@ -720,8 +721,11 @@ h3 {
     padding-bottom: 2.5rem; }
     .c-post--list a {
       text-decoration: underline; }
-    .c-post--list p {
+    .c-post--list p,
+    .c-post--list ul {
       max-width: 550px; }
+    .c-post--list ul li {
+      margin-bottom: .75rem; }
   .c-post--space {
     margin-bottom: 4.5rem; }
   .c-post--content {
