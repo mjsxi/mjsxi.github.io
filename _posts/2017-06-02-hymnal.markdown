@@ -3,7 +3,8 @@ title: hymnal
 date: 2017-06-02 21:45:00 Z
 tags:
 - user research
-- ux/visual design
+- ux design
+- system design
 images:
 - hymnal-ad-overview.png
 - hymnal-ad-fields.png
