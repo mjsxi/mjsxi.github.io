@@ -2,9 +2,8 @@
 title: insights
 date: 2017-06-04 21:45:00 Z
 tags:
-- user reasearch
+- user research
 - ux/visual design
-- development
 images:
 - insights-home-page-mobile.png
 - insights-home-page.png

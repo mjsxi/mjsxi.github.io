@@ -3,7 +3,7 @@ title: vox
 date: 2017-06-05 21:45:00 Z
 tags:
 - visual design
-- development
+- early product exploration
 alt-title: voxdotcom
 images:
 - vox-home-page-mobile.png

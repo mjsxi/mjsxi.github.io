@@ -2,9 +2,8 @@
 title: hymnal
 date: 2017-06-02 21:45:00 Z
 tags:
-- user reasearch
+- user research
 - ux/visual design
-- development
 images:
 - hymnal-ad-overview.png
 - hymnal-ad-fields.png
@@ -13,6 +12,19 @@ images:
 - hymnal-ad-test.png
 layout: page
 ---
+
+Hymnal is Vox Media's internal ad platform, this project — which was instrumental in rethinking how ad were built for scale over all premium ads run on Vox Media websites onto one platform, built on a single codebase and shared design system. The project took two years to complete and involved more than 350 websites across our eight editorial brands.
+
+<!--more-->
+
+### testing out this
+1. one
+2. two
+3. three
+
+* one
+* two
+* three
 
 For the better part of last year, I worked on the product design and development of Vox Media's proprietary custom display and native ad unit publishing platform, Hymnal.
 
