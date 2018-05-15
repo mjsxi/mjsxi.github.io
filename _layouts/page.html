@@ -34,6 +34,15 @@ layout: default-projects
       <h2>{{ page.title | escape }}</h2>
     {% endif %}
 
+    {% if page.tags %}
+      <ul class="c-tags">
+        {% for tags in page.tags %}
+          <li><p>{{ tags }}</p></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+
     {{ content }}
 
     {% include page-nav.html %}
