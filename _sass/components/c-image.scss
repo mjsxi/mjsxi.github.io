@@ -4,7 +4,7 @@
 }
 
 .images {
-  padding-left: 1.5rem;
+  padding-left: 0.5rem;
 
   display: flex;
   flex-direction: row;
@@ -20,6 +20,7 @@
   }
 
   @include media-query {
+    padding-left: 1.5rem;
     height: 42vh;
     padding-left: calc((100% - #{$large-screen})/2);
 
