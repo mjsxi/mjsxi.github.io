@@ -713,6 +713,31 @@ h3 {
 .c-post {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem; }
+  .c-post--images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 2rem;
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem);
+    width: calc(100vw + 1rem); }
+    @media screen and (min-width: 962px) {
+      .c-post--images {
+        width: 100vw;
+        padding-left: calc((100vw - 930px)/2);
+        -webkit-transform: translateX(calc((100vw - 930px)/-2));
+                transform: translateX(calc((100vw - 930px)/-2)); } }
+    .c-post--images img {
+      height: 60vw;
+      max-height: 425px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      margin-right: 1rem; }
+      @media screen and (min-width: 962px) {
+        .c-post--images img {
+          max-height: 625px;
+          margin-right: 1rem; } }
   .c-post--list {
     margin-top: 2.5rem;
     padding-bottom: 2.5rem; }

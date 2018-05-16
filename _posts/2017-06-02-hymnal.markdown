@@ -25,6 +25,13 @@ The hope was to make creating and building ads much easier along with reducing t
 - refresh User flow and rethink how new ads are built
 - reduce Build times to decrease per ad cost
 
+<div class="c-post--images">
+  <img src="../uploads/hymnal-old-1.jpg">
+  <img src="../uploads/hymnal-old-2.jpg">
+  <img src="../uploads/hymnal-old-3.jpg">
+</div>
+<cite>past version of hymnal (assets, development, new ad form)</cite>
+
 ### jumping off point
 hymnal was brought into the world in 2014 and was a quick experiment by a few engineers as a proof of concept built using rails and bootstrap 2 without any design input (lolsob). Fast forward a few years and it was supporting nearly one hundred users and millions of dollars and grew to be one of vox media’s main lines of business. Due to user frustration hymnal was slated for a massive overhaul with a design lead rework.
 
