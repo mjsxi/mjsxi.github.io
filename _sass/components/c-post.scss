@@ -17,7 +17,7 @@
     }
 
     img {
-      height: 60vw;
+      height: 58vw;
       max-height: 425px;
       object-fit: cover;
       margin-right: 1rem;
@@ -25,7 +25,7 @@
 
       @include media-query {
         max-height: 625px;
-        margin-right: 1rem;
+        margin-right: 2rem;
       }
     }
   }

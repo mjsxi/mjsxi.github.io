@@ -729,7 +729,7 @@ h3 {
         -webkit-transform: translateX(calc((100vw - 930px)/-2));
                 transform: translateX(calc((100vw - 930px)/-2)); } }
     .c-post--images img {
-      height: 60vw;
+      height: 58vw;
       max-height: 425px;
       -o-object-fit: cover;
          object-fit: cover;
@@ -737,7 +737,7 @@ h3 {
       @media screen and (min-width: 962px) {
         .c-post--images img {
           max-height: 625px;
-          margin-right: 1rem; } }
+          margin-right: 2rem; } }
   .c-post--list {
     margin-top: 2.5rem;
     padding-bottom: 2.5rem; }
