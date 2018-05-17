@@ -411,9 +411,9 @@ template {
 
 body {
   font-family: "Apercu Mono", monospace;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.65rem;
+  line-height: 1.75;
   color: #848484;
   background: #FFFCF6;
   position: relative;
@@ -421,8 +421,8 @@ body {
   overflow-x: hidden; }
   @media screen and (min-width: 962px) {
     body {
-      font-size: 1rem;
-      line-height: 1.75; } }
+      font-size: 1.05rem;
+      line-height: 1.9rem; } }
 
 img,
 video {
@@ -487,8 +487,6 @@ h2 {
 h3 {
   font-weight: 600;
   text-decoration: underline;
-  letter-spacing: -1px;
-  word-spacing: -3px;
   margin-bottom: 0rem;
   margin-top: 2.25rem; }
 
@@ -498,12 +496,12 @@ h3 {
   font-style: normal; }
 @font-face {
   font-family: 'Apercu Mono';
-  src: url("./fonts/apercu-mono.woff") format("woff");
+  src: url("./fonts/ISO.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'Apercu Mono';
-  src: url("./fonts/apercu-mono_bold.woff") format("woff");
+  src: url("./fonts/ISO_bold.woff") format("woff");
   font-weight: 600;
   font-style: normal; }
 .c-header .header-container, .c-footer .footer-container, .c-post--content {
@@ -815,7 +813,7 @@ h3 {
 
 .c-tags {
   font-family: "Apercu Mono", monospace;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.75;
   margin-bottom: .9rem;
@@ -824,7 +822,6 @@ h3 {
     display: inline-block;
     background: #848484;
     color: #ffffff;
-    font-size: 12px;
     padding: 4px 8px 3px;
     margin-bottom: 10px;
     margin-right: -.35rem; }
@@ -836,4 +833,4 @@ h3 {
       margin-top: 0; }
     @media screen and (min-width: 962px) {
       .c-tags li {
-        font-size: 14px; } }
+        font-size: 0.95rem; } }
